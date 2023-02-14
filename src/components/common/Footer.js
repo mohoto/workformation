@@ -43,7 +43,7 @@ export default function Footer() {
                 </div>
 
                 <div className="space-y-4">
-                    <h5 className="text-xl font-bold md:text-lg">CONTACT</h5>
+                    <h5 className="text-xl font-bold md:text-lg">CON</h5>
                     <div className="text-lg md:text-base">
                         <p className="flex items-center mb-1"><BsTelephoneInbound size={20} className="inline-block mr-2" />Telephone:</p>
                         <a href="tel:+33-1-45-76-78-98" className="flex items-center">
