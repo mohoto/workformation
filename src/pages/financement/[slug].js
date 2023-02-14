@@ -3,7 +3,7 @@ import Head from 'next/head'
 import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '../../components/financements/Content'
-import Sidebar from '../../components/financements/SideBar'
+import Sidebar from '../../components/financements/Sidebar'
 
 export default function Financemnt() {
 
