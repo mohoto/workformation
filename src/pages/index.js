@@ -12,6 +12,10 @@ import BlogSection from '@/components/home/BlogSection'
 //const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({selectedFormations, selectedArticles}) {
+
+  const url = process.env.NEXT_PUBLIC_API_KEY;
+  console.log('url:', url)
+  
   return (
     <>
       <Head>
@@ -36,8 +40,10 @@ export default function Home({selectedFormations, selectedArticles}) {
 }
 
 export async function getStaticProps() {
-  const {data: formations} = await axios.get('http://localhost:3000/api/formations');
-  const {data: articles} = await axios.get('http://localhost:3000/api/articles');
+  const url = `${process.env.NEXT_API_URL}/api`;
+  console.log('url:', url)
+  const {data: formations} = await axios.get(`${url}/formations`);
+  const {data: articles} = await axios.get(`${url}/articles`);
   return {
     props: {
       selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11"),

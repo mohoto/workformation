@@ -57,7 +57,8 @@ useEffect(() => {
 }
 
 export async function getStaticPaths() {
-    const {data} = await axios.get('http://localhost:3000/api/services');
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data} = await axios.get(`${url}/services`);
     const paths = data.map(service => {
         return {
             params: {
@@ -72,9 +73,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+    const url = `${process.env.NEXT_API_URL}/api`;
     const {params} = context;
-    const {data:services} = await axios.get('http://localhost:3000/api/services');
-    const {data:service} = await axios.get(`http://localhost:3000/api/services/${params.slug}`);
+    const {data:services} = await axios.get(`${url}/services`);
+    const {data:service} = await axios.get(`${url}/services/${params.slug}`);
     return {
         props: {
             services,

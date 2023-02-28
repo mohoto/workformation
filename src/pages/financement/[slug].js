@@ -36,7 +36,8 @@ const {slug} = router.query
 }
 
 export async function getStaticPaths() {
-    const {data} = await axios.get('http://localhost:3000/api/financements');
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data} = await axios.get(`${url}/financements`);
     const paths = data.map(financement => {
         return {
             params: {
@@ -51,9 +52,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const {data:financements} = await axios.get('http://localhost:3000/api/financements')
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data:financements} = await axios.get(`${url}/financements`)
     const {params} = context;
-    const {data: financement} = await axios.get(`http://localhost:3000/api/financements/${params.slug}`);
+    const {data: financement} = await axios.get(`${url}/financements/${params.slug}`);
     return {
         props: {
             financements,

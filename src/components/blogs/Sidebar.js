@@ -19,7 +19,7 @@ export default function Sidebar({articles, categories}) {
                     <li key={category.id} className="pb-2 mb-2 border-b last:border-none last:mb-0 last:pb-0">
                         <BiChevronsRight className="inline-block mr-2 -mt-1 h4"/>
                         <Link href={`/infos/${category.slug}`}
-                        className={`hover:text-second-50 ${category.slug === categorie ? 'text-second-50' : 'text-bleue-karoy-100'}`}
+                        className={`hover:text-second-50 capitalize ${category.slug === categorie ? 'text-second-50' : 'text-bleue-karoy-100'}`}
                         >
                             {category.name}
                         </Link>

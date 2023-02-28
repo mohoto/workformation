@@ -41,7 +41,8 @@ console.log('category:', category)
 }
 
 export async function getStaticPaths() {
-    const {data:formations} = await axios.get('http://localhost:3000/api/formations')
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data:formations} = await axios.get(`${url}/formations`)
     const paths = formations.map(formation => {
         return {
             params: {
@@ -56,10 +57,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+    const url = `${process.env.NEXT_API_URL}/api`;
     const {categorie} = context.params;
-    const {data: formations} = await axios.get(`http://localhost:3000/api/formations/categorie/${categorie}`)
-    const {data: categories} = await axios.get('http://localhost:3000/api/categoriesFormation');
-    const {data: category} = await axios.get(`http://localhost:3000/api/categoriesFormation/${categorie}`)
+    const {data: formations} = await axios.get(`${url}/formations/categorie/${categorie}`)
+    const {data: categories} = await axios.get(`${url}/categoriesFormation`);
+    const {data: category} = await axios.get(`${url}/categoriesFormation/${categorie}`)
     return {
         props: {
             formations,

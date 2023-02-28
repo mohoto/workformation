@@ -114,7 +114,8 @@ export default function Formation({formation}) {
 }
 
 export async function getStaticPaths() {
-  const {data: formations} = await axios.get('http://localhost:3000/api/formations')
+  const url = `${process.env.NEXT_API_URL}/api`;
+  const {data: formations} = await axios.get(`${url}/formations`)
   const paths = formations.map(formation => {
     return {
       params: {
@@ -130,8 +131,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
+  const url = `${process.env.NEXT_API_URL}/api`;
     const {slug} = context.params;
-    const {data:formation} = await axios.get(`http://localhost:3000/api/formations/${slug}`);
+    const {data:formation} = await axios.get(`${url}/formations/${slug}`);
     return {
       props: {
         formation

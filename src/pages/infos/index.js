@@ -32,8 +32,9 @@ export default function Article({articles, categories}) {
 }
 
 export async function getStaticProps () {
-    const {data: articles} = await axios.get('http://localhost:3000/api/articles');
-    const {data: categories} = await axios.get('http://localhost:3000/api/categoriesFormation');
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data: articles} = await axios.get(`${url}/articles`);
+    const {data: categories} = await axios.get(`${url}/categoriesFormation`);
     return {
         props: {
             articles,
