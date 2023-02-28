@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {HiOutlineUser, HiOutlineBadgeCheck} from 'react-icons/hi'
 import {SlGraduation} from 'react-icons/sl'
-import Filter from './filter'
+import Filter from '@/components/formations/Filter'
 
 export default function Content({formations, categories, categorie}) {
   return (
