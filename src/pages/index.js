@@ -32,7 +32,7 @@ export default function Home({selectedFormations, selectedArticles}) {
         <Formations selectedFormations={selectedFormations}/>
         <FinancementSection />
         <SectionRappel />
-        <BlogSection selectedArticles={selectedArticles} /> 
+         
         <Centres />
       </main>
     </>
@@ -42,11 +42,11 @@ export default function Home({selectedFormations, selectedArticles}) {
 export async function getStaticProps() {
   const url = `${process.env.NEXT_API_URL}/api`;
   const {data: formations} = await axios.get(`${url}/formations`);
-  const {data: articles} = await axios.get(`${url}/articles`);
+  
   return {
     props: {
       selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11"),
-      selectedArticles: articles.filter(article => article.id === "1" || article.id === "6" || article.id === "2"),
+      
     }
   }
 } 
