@@ -48,7 +48,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps (context) {
-    const url = `${process.env.NEXT_API_URL}/api`
+    const url = `${process.env.NEXT_API_URL}/api`;
     const {slug} = context.params
     const {data: articles} = await axios.get(`${url}/articles`);
     const {data: categories} = await axios.get(`${url}/categoriesBlog`);

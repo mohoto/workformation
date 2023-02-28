@@ -32,7 +32,7 @@ export default function Article({articles, categories}) {
 }
 
 export async function getStaticPaths() {
-    const url = `${process.env.NEXT_API_URL}/api`
+    const url = `${process.env.NEXT_API_URL}/api`;
     const {data: articles} = await axios.get(`${url}/articles`);
     const paths = articles.map(article => {
         return {
@@ -48,7 +48,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const url = `${process.env.NEXT_API_URL}/api`
+    const url = `${process.env.NEXT_API_URL}/api`;
     const {categorie} = context.params;
     
     const {data: articles} = await axios.get(`${url}/articles/categorie/${categorie}`)
