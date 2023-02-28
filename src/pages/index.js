@@ -41,7 +41,6 @@ export default function Home({selectedFormations, selectedArticles}) {
 
 export async function getStaticProps() {
   const url = `${process.env.NEXT_API_URL}/api`;
-  console.log('url:', url)
   const {data: formations} = await axios.get(`${url}/formations`);
   const {data: articles} = await axios.get(`${url}/articles`);
   return {

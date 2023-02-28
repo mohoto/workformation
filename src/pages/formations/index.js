@@ -35,8 +35,9 @@ export default function Formations({formations, categories}) {
 }
 
 export async function getStaticProps() {
-    const {data: formations} = await axios.get('http://localhost:3000/api/formations')
-    const {data: categories} = await axios.get('http://localhost:3000/api/categoriesFormation');
+    const url = `${process.env.NEXT_API_URL}/api`;
+    const {data: formations} = await axios.get(`${url}/formations`)
+    const {data: categories} = await axios.get(`${url}/categoriesFormation`);
     return {
         props: {
             formations,
