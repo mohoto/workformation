@@ -53,6 +53,10 @@ const NavbarData = [
         ]
     },
     {
+        title: 'INFOS',
+        link: '/infos',
+    },
+    {
         title: 'CONTACT',
         link: '/contact',
     }

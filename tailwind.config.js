@@ -19,6 +19,9 @@ module.exports = {
       card: '0 0 30px 0 rgba(0,0,0,.11)'
     },
     extend: {
+      screens: {
+        '3xl': '1786px',
+      },
       colors: {
         'bleue-karoy': {
             '10': '#f4fbfe',

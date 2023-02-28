@@ -1,5 +1,10 @@
 
 @tailwind base;
+@layer base {
+  html {
+    @apply text-bleue-karoy-100;
+  } 
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -127,4 +132,7 @@ a {
   background: #ffffff;
   border-radius: 6px;
 }
+
+
+
 

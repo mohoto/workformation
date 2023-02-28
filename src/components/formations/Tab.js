@@ -4,7 +4,6 @@ import {HiOutlineLocationMarker, HiOutlineCalendar, HiOutlineUsers, HiOutlineBad
 export default function Tab({tabData}) {
 
     const [openTab, setOpenTab] = useState("1");
-    console.log('openTab:', openTab)
 
   return (
     <div>
@@ -36,7 +35,7 @@ export default function Tab({tabData}) {
                     </table>
                     <h4 className="mt-4 text-3xl font-light">{tab.content.prix} €</h4>
                     <p className="mt-2 font-extralight font-xs">Nos formations ne sont pas soumises à la TVA.</p>
-                    <p className="mt-6 font-light font-xs">Cette formation est éligible aux financements :</p>
+                    <p className="mt-6 font-light font-xs">Cette formation est éligible aux financements:</p>
                     <p className="mt-2 font-extralight font-xs">{tab.content.financements.join(", ")}</p>
                 </div>
             ))}

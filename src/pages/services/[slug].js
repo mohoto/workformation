@@ -5,12 +5,12 @@ import axios from 'axios'
 import Content from '../../components/services/Content'
 import Sidebar from '../../components/services/SideBar'
 
-export default function Service() {
+export default function Service({service, services}) {
 
 const router = useRouter();
 const {slug} = router.query
 
-const [services, setServices] = useState();
+/* const [services, setServices] = useState();
 console.log('services:', services)
 
 const [service, setService] = useState();
@@ -29,7 +29,7 @@ const getService = async () => {
 useEffect(() => {
     getServices();
     getService();
-}, [slug])
+}, [slug]) */
 
   return (
     <>
@@ -41,7 +41,7 @@ useEffect(() => {
             <link rel="icon" href="/favicon.ico" />
         </Head> 
         <main>
-            <div className="flex px-6 py-8 mt-20 md:px-6 lg:px-12 xl:px-20 2xl:px-52 3xl:px-64">
+            <div className="flex px-6 py-8 mt-20 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-64">
                 <div className="grid grid-flow-row gap-y-8 md:gap-x-12 md:grid-cols-3">
                     <div className="order-2 md:col-span-1 md:order-1">
                         <Sidebar services={services} service={service} slug={slug} />
@@ -54,5 +54,32 @@ useEffect(() => {
         </main>
     </>
   )
+}
+
+export async function getStaticPaths() {
+    const {data} = await axios.get('http://localhost:3000/api/services');
+    const paths = data.map(service => {
+        return {
+            params: {
+                slug: service.slug
+            }
+        }
+    })
+    return {
+        paths: paths,
+        fallback: false
+    }
+}
+
+export async function getStaticProps(context) {
+    const {params} = context;
+    const {data:services} = await axios.get('http://localhost:3000/api/services');
+    const {data:service} = await axios.get(`http://localhost:3000/api/services/${params.slug}`);
+    return {
+        props: {
+            services,
+            service
+        }
+    }
 }
 

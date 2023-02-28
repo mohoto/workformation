@@ -4,7 +4,7 @@ export default function Content({financement}) {
     return (
         <div className="px-4 pb-8 md:px-8">
             <div className="pb-5">
-                <h1 className="text-3xl font-semibold text-left uppercase">{financement?.title}</h1>
+                <h1 className="text-3xl font-semibold text-left uppercase 2xl:text-4xl text-bleue-karoy-100">{financement?.title}</h1>
                 <div className="flex py-6">
                     <div className="relative ">
                         <span className="before:content-[''] before:w-[100px] before:h-[5px] before:top-[0] before:left-[0] before:absolute before:rounded-lg before:bg-second-50"></span>

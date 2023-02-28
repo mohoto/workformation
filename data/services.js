@@ -75,7 +75,7 @@ export const services = [
         id: "2",
         title: "Formation pour les entreprises",
         slug: "formation-pour-entreprises",
-        link: "/sevices/formation-pour-entreprises",
+        link: "/services/formation-pour-entreprises",
         linkText: "Formation pour entreprises",
         image: "/images/financements/logo-compte-professionnel-formation-cpf.jpg",
         introduction: "L'investissement dans la formation et le développement professionnel des employés peut offrir de nombreux avantages aux entreprises. La formation aide les entreprises à se développer et à prospérer. Dans un monde du travail en constante évolution, il est important pour les entreprises de maintenir leur pertinence en veillant à ce que leurs employés disposent des compétences nécessaires pour réussir.",

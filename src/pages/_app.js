@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     };
     const handleComplete = (url) => {
       if(url === router.asPath) {
-        setTimeout(() => {setLoading(false)}, 1000);
+        setTimeout(() => {setLoading(false)}, 500);
       }
     }
         
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
       {loading ? (
           <div className="flex items-center justify-center w-full h-screen bg-bleue-karoy-100">
               <span className="absolute inline-flex w-12 h-12 rounded-full opacity-75 animate-ping bg-second-50"></span>
-              <span className="relative inline-flex w-10 h-10 rounded-full bg-second-50"></span>
+              <span className="relative inline-flex w-10 h-10 bg-white rounded-full"></span>
           </div>
       ): (
         <main className={`${poppins.variable} font-sans`}>

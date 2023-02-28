@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import axios from 'axios'
 import SectionRappel from '../components/common/section-rappel/SectionRappel'
 import Centres from '../components/home/Centres'
 import FinancementSection from '../components/home/FinancementSection'
@@ -6,10 +7,11 @@ import Formations from '../components/home/Formations'
 import Hero from '../components/home/Hero'
 import SectionFormationTwo from '../components/home/SectionFormationTwo'
 import Services from '@/components/home/Services'
+import BlogSection from '@/components/home/BlogSection'
 
 //const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({selectedFormations, selectedArticles}) {
   return (
     <>
       <Head>
@@ -23,11 +25,23 @@ export default function Home() {
         <Hero />
         <Services />
         <SectionFormationTwo />
-        <Formations />
+        <Formations selectedFormations={selectedFormations}/>
         <FinancementSection />
-        <SectionRappel /> 
+        <SectionRappel />
+        <BlogSection selectedArticles={selectedArticles} /> 
         <Centres />
       </main>
     </>
   )
 }
+
+export async function getStaticProps() {
+  const {data: formations} = await axios.get('http://localhost:3000/api/formations');
+  const {data: articles} = await axios.get('http://localhost:3000/api/articles');
+  return {
+    props: {
+      selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11"),
+      selectedArticles: articles.filter(article => article.id === "1" || article.id === "6" || article.id === "2"),
+    }
+  }
+} 

@@ -43,7 +43,7 @@ export default function Footer() {
                 </div>
 
                 <div className="space-y-4">
-                    <h5 className="text-xl font-bold md:text-lg">CON</h5>
+                    <h5 className="text-xl font-bold md:text-lg">CONTACT</h5>
                     <div className="text-lg md:text-base">
                         <p className="flex items-center mb-1"><BsTelephoneInbound size={20} className="inline-block mr-2" />Telephone:</p>
                         <a href="tel:+33-1-45-76-78-98" className="flex items-center">
@@ -52,7 +52,7 @@ export default function Footer() {
                     </div>
                     <div className="text-lg md:text-base">
                         <p className="flex items-center mb-1"><HiOutlineMail className="h-4 mr-2"/>Email:</p>
-                        <p>infos@workformation.com</p>
+                        <p>infos@workformation.fr</p>
                     </div>
                     <div className="text-lg md:text-base">
                         <p className="flex items-center mb-1"><HiOutlineLocationMarker className="h-4 mr-2"/>Adresse:</p>
@@ -62,7 +62,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="py-4 bg-bleue-karoy-100">
-            <p className="text-center text-white font-extralight">Copyright © 2022 Work formation</p>
+            <p className="text-center text-white font-extralight">Copyright © 2023 Work formation</p>
         </div>
     </footer>
   )

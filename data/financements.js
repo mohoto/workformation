@@ -5,7 +5,7 @@ export const financements = [
         slug: "financement-pole-emploi",
         link: "/financement/financement-pole-emploi",
         image: "/images/financements/logo-pole-emploi-900x500.jpg",
-        metaDescription: "Le financement Pôle emploi est un dispositif qui permet aux demandeurs d'emploi de bénéficier d'une prise en charge financière pour suivre une formation.",
+        metaDescription: "Le financement AIF par Pôle emploi est un dispositif qui permet aux demandeurs d'emploi de bénéficier d'une prise en charge financière pour suivre une formation.",
         content: [
             {
                 id: "1",

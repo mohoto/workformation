@@ -33,7 +33,7 @@ export default function Service({iconName, title, texte, link, linkText}){
                 </div>
                 <div className="text-center">
                     <h3 className="mb-6 text-xl font-semibold text-center">Formation<br/>{title}</h3>
-                    <p className="mb-6 text-sm text-center">{texte}</p>
+                    <p className="mb-8 text-sm text-center">{texte}</p>
                     <Link href={link}
                     className="flex items-center justify-center text-bleue-karoy-100 group-hover:text-second-50"
                     >

@@ -71,11 +71,11 @@ const Navbar = () => {
                                     />
                                 </div>
                             </Link>
-                            <div className="hidden md:flex">
-                                <ul className="flex space-x-3 font-semibold text-md">
+                            <div className="hidden lg:flex">
+                                <ul className="flex space-x-3">
                                     {NavbarData && NavbarData.map((value, index) => (
                                         // <li className={pathname === '/notre-centre' ? 'text-bleue-karoy-50' : undefined}>
-                                        <li className="relative" key={index} onMouseEnter={() => setSubnav(index) }>
+                                        <li className="relative lg:text-base xl:text-base 2xl:text-base 3xl:text-lg" key={index} onMouseEnter={() => setSubnav(index) }>
                                             {value.link ? (
                                                 <NavLink href={value.link}>
                                                     {value.title}
@@ -87,8 +87,11 @@ const Navbar = () => {
                                                 <div className="absolute left-0 right-0 z-50 mt-2 origin-top-right rounded-md shadow-lg md:w-80" onMouseLeave={() => setSubnav(0)}>
                                                     <ul className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
                                                         {value.subMenu && value.subMenu.map((value, index) => (
-                                                            <li className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bleue-karoy-50 dark-mode:focus:bg-bleue-karoy-50 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-white focus:text-white hover:bg-bleue-karoy-50 focus:bg-bleue-karoy-50 focus:outline-none focus:shadow-outline" key={index}>
-                                                                <NavLink href={value.link}>
+                                                            <li key={index} className="lg:text-base xl:text-base 2xl:text-base 3xl:text-lg">
+                                                                <NavLink 
+                                                                href={value.link}
+                                                                className="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-second-50 focus:bg-second-50 focus:outline-none focus:shadow-outline"
+                                                                >
                                                                     {value.title}
                                                                 </NavLink>
                                                             </li> 
@@ -121,7 +124,7 @@ const Navbar = () => {
                                     </LinkSroll>
                                 </button>
                             </div>
-                            <div className="md:hidden">
+                            <div className="lg:hidden">
                                 {/* Mobile-menu */}
                                 <div onClick={() => setOpenMenu(!openMenu)} className="cursor-pointer">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 bg-gray-100">
@@ -132,7 +135,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     {openMenu && (
-                        <div className="p-4 bg-white border-t-2 border-gray-200 md:hidden">
+                        <div className="p-4 bg-white border-t-2 border-gray-200 lg:hidden">
                             <ul className="flex flex-col space-y-3 font-semibold text-md fadeInUp">
                                 {NavbarData && NavbarData.map((value, index) => (
                                     // <li className={pathname === '/notre-centre' ? 'text-bleue-karoy-50' : undefined}>
@@ -145,11 +148,12 @@ const Navbar = () => {
                                             <span className="cursor-pointer">{value.title}</span>
                                         )}
                                         {value.subMenu && subnav === index ? (
-                                            
                                                 <ul className="px-2 py-2 bg-white dark-mode:bg-gray-800">
                                                     {value.subMenu && value.subMenu.map((value, index) => (
-                                                        <li key={index} className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bleue-karoy-50 dark-mode:focus:bg-bleue-karoy-50 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-white focus:text-white hover:bg-bleue-karoy-50 focus:bg-bleue-karoy-50 focus:outline-none focus:shadow-outline">
-                                                            <NavLink href={value.link}>
+                                                        <li key={index}>
+                                                            <NavLink 
+                                                            href={value.link}
+                                                            className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-bleue-karoy-50 dark-mode:focus:bg-bleue-karoy-50 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-white focus:text-white hover:bg-bleue-karoy-50 focus:bg-bleue-karoy-50 focus:outline-none focus:shadow-outline">
                                                                 {value.title}
                                                             </NavLink>
                                                         </li> 

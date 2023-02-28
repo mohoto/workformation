@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
-import {BsTelephoneInbound, BsCheck2} from 'react-icons/bs'
+import {BsTelephoneInbound, BsCheck2, BsInfoCircleFill} from 'react-icons/bs'
 import dynamic from 'next/dynamic'
 const InputMask = dynamic(() => {return import ('react-input-mask-next')}, {ssr: false});
 
@@ -19,7 +19,7 @@ export default function RappelSidebar() {
     }
     const {nom, prenom, phoneNumber} = values;
     const [errorMessage, setErrorMessage] = useState(false);
-    console.log('errorMessage:', errorMessage)
+ 
     const [spinner, setSpinner] = useState(false);
     const [sucessMessage, setSucessMessage] = useState(false);
 
@@ -50,15 +50,16 @@ export default function RappelSidebar() {
     }
 
     return (
-        <div className="rounded-lg shadow-md md:px-6 bg-bleue-karoy-100" id="sectionRappel">
+        <div className="rounded-md shadow-md md:px-6 bg-bleue-karoy-100" id="sectionRappel">
             <div id="successMessage" className="flex flex-col items-center px-2 pt-6 pb-3 md:px-4">
-                <div className="relative border-4 rounded-full shadow-2xl w-28 h-28 border-second-50">
+                <div className="relative rounded-full shadow-2xl w-28 h-28">
                     <Image 
                     src="/images/conseiller-karoy-formation"
                     fill
                     className="rounded-full"
                     alt="illustration conseiller Work formation"
                     />
+                    <BsInfoCircleFill size={35} className="absolute text-second-50 bottom-[10px] right-[-10px] bg-white rounded-full border-2 border-white" />
                 </div>
                 <h3 className="w-full py-3 text-center text-gray-100">Besoin d'un conseil sur le choix de votre formation ou sur les financements dont vous pouvez bénéficier?</h3>
                 <div className="flex items-center justify-center">
