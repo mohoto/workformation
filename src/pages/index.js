@@ -8,19 +8,11 @@ import Hero from '../components/home/Hero'
 import SectionFormationTwo from '../components/home/SectionFormationTwo'
 import Services from '@/components/home/Services'
 import BlogSection from '@/components/home/BlogSection'
-import useSWR from 'swr'
-
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
 
 //const inter = Inter({ subsets: ['latin'] })
 
-// export default function Home({selectedFormations, selectedArticles}) {
-  export default function Home() {
+export default function Home({selectedFormations, selectedArticles}) {
   
-  //A retirer
-  const {data: selectedFormations} = useSWR('/api/formations', fetcher);
-  const {data: selectedArticles, error} = useSWR('/api/articles', fetcher);
   
   return (
     <>
@@ -45,7 +37,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
   )
 }
 
-/* export async function getStaticProps() {
+export async function getStaticProps() {
   const url = process.env.NEXT_API_URL;
   const {data: formations} = await axios.get(`${url}/api/formations`);
   const {data: articles} = await axios.get(`${url}/api/articles`);
@@ -55,4 +47,4 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
       selectedArticles: articles.filter(article => article.id === "1" || article.id === "6" || article.id === "2"),
     }
   }
-} */ 
+} 
