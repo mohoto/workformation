@@ -41,7 +41,7 @@ const {data: categories} = useSWR('/api/categoriesBlog', fetcher); */
 }
 
 export async function getStaticProps () {
-    const url = `${process.env.NEXT_API_URL}/api`;
+    const url = process.env.NEXT_API_URL;
     const {data: articles} = await axios.get(`${url}/api/articles`);
     const {data: categories} = await axios.get(`${url}/api/categoriesBlog`);
     return {
