@@ -32,7 +32,7 @@ const {data: financements} = useSWR('/api/financements', fetcher);
             <div className="flex px-6 py-8 mt-20 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52">
                 <div className="grid grid-flow-row gap-y-8 md:gap-x-12 md:grid-cols-3">
                     <div className="order-2 md:col-span-1 md:order-1">
-                        <Sidebar financements={financements} financement={financement} />
+                        <Sidebar financements={financements} financement={financement} slug={slug}/>
                     </div>
                     <div className="order-1 md:col-span-2 md:order-2">
                         <Content financement={financement} />
