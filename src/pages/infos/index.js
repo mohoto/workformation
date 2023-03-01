@@ -8,12 +8,12 @@ import useSWR from 'swr'
 //important to return only result, not Promise
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-// export default function Article({articles, categories}) {
-export default function Article() {
+export default function Article({articles, categories}) {
+//export default function Article() {
 
 //A retirer
-const {data: articles} = useSWR('/api/articles', fetcher);
-const {data: categories} = useSWR('/api/categoriesBlog', fetcher);
+/* const {data: articles} = useSWR('/api/articles', fetcher);
+const {data: categories} = useSWR('/api/categoriesBlog', fetcher); */
 
   return (
     <>
@@ -40,7 +40,7 @@ const {data: categories} = useSWR('/api/categoriesBlog', fetcher);
   )
 }
 
-/* export async function getStaticProps () {
+export async function getStaticProps () {
     const url = `${process.env.NEXT_API_URL}/api`;
     const {data: articles} = await axios.get(`${url}/api/articles`);
     const {data: categories} = await axios.get(`${url}/api/categoriesBlog`);
@@ -50,4 +50,4 @@ const {data: categories} = useSWR('/api/categoriesBlog', fetcher);
             categories
         }
     }
-} */
+} 

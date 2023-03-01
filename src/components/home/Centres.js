@@ -7,7 +7,7 @@ import {BsTelephoneInbound} from 'react-icons/bs'
 
 export default function Centres() {
     return (
-        <section className="px-5 py-10 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52">
+        <section className="px-5 py-10 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
             <div className="grid md:grid-cols-3 gap-x-10 gap-y-6">
                 <div className="px-10 py-5 space-y-2 font-light text-white rounded-lg bg-bleue-karoy-100">
                     <p>Notre centre disposent d’espaces dédiés et de matériel pédagogique pour l’apprentissage théorique et pratique.</p>

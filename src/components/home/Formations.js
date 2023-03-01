@@ -19,7 +19,7 @@ export default function Formations({selectedFormations}) {
     }, []) */ 
 
     return (
-        <section className="px-6 py-16 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52 bg-bleue-karoy-100">
+        <section className="px-6 py-16 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52 bg-bleue-karoy-100">
             <h2 className="text-3xl font-semibold text-center text-white xl:text-4xl">TROUVEZ VOTRE FORMATION</h2>
             <div className="flex justify-center py-6">
                 <div className="relative ">

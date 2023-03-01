@@ -4,7 +4,7 @@ import financements from '../../../public/images/financements/dispositifs-financ
 
 export default function FinancementSection() {
     return (
-        <section className="px-6 py-16 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52">
+        <section className="px-6 py-16 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
             <h2 className="text-3xl font-semibold text-center xl:text-4xl text-bleue-karoy-100">LES FINANCEMENTS<br/>POUR VOTRE FORMATION</h2>
             <div className="flex justify-center py-6">
                 <div className="relative ">

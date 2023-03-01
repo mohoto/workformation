@@ -6,7 +6,7 @@ import {SiMicrosoftoffice} from 'react-icons/si'
 
 export default function SectionFormationTwo() {
     return (
-        <section className="grid items-center px-4 py-16 gap-x-10 lg:grid-cols-2 lg:grid-rows-none md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52 gap-y-4 lg:gap-y-0">
+        <section className="grid items-center px-4 py-16 gap-x-10 lg:grid-cols-2 lg:grid-rows-none md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52 gap-y-4 lg:gap-y-0">
             <div className="order-last lg:order-first">
                 <Link href="/formations/bureautique">
                     <h2 className="text-3xl font-semibold transition duration-200 ease-in-out cursor-pointer xl:text-4xl text-bleue-karoy-100 hover:text-second-50">FORMATIONS BUREAUTIQUE</h2>
