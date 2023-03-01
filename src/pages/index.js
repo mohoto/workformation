@@ -28,7 +28,7 @@ export default function Home({selectedFormations, selectedArticles}) {
         <Services />
         <SectionFormationTwo />
         <Formations selectedFormations={selectedFormations}/>
-        <FinancementSection />
+        {/* <FinancementSection /> */}
         <SectionRappel />
         <BlogSection selectedArticles={selectedArticles} />
         <Centres />
