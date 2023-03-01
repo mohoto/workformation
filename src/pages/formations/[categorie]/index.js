@@ -4,18 +4,27 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import SectionRappel from '@/components/common/section-rappel/SectionRappel'
 import Content from '@/components/formations/Content'
+import useSWR from 'swr'
 
-export default function FormationsByCategory({formations, categories, category}) {
-console.log('category:', category)
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+// export default function FormationsByCategory({formations, categories, category}) {
+export default function FormationsByCategory() {
 
     const router = useRouter();
     const {categorie} = router.query;
-    const title = `Nos formations ${category?.name}`
+    //const title = `Nos formations ${category?.name}`
+
+    //A retirer
+    const {data: formations} = useSWR(`/api/formations/categorie/${categorie}`, fetcher);
+    const {data: categories} = useSWR('/api/categoriesFormation', fetcher);
+    const {data: category} = useSWR(`/api/categoriesFormation/${categorie}`, fetcher);
 
     return (
         <>
             <Head>
-                <title>{title} - WORK FORMATION</title>
+                <title>Nos formations {category?.name} - WORK FORMATION</title>
                 <meta name="description" content={category?.metaDescription} />
                 <meta property="og-title" content={`Nos formations ${category?.name}`} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,9 +49,9 @@ console.log('category:', category)
     )
 }
 
-export async function getStaticPaths() {
-    const url = `${process.env.NEXT_API_URL}/api`;
-    const {data:formations} = await axios.get(`${url}/formations`)
+/* export async function getStaticPaths() {
+    const url = process.env.NEXT_API_URL;
+    const {data:formations} = await axios.get(`${url}/api/formations`)
     const paths = formations.map(formation => {
         return {
             params: {
@@ -57,11 +66,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const url = `${process.env.NEXT_API_URL}/api`;
+    const url = process.env.NEXT_API_URL;
     const {categorie} = context.params;
-    const {data: formations} = await axios.get(`${url}/formations/categorie/${categorie}`)
-    const {data: categories} = await axios.get(`${url}/categoriesFormation`);
-    const {data: category} = await axios.get(`${url}/categoriesFormation/${categorie}`)
+    const {data: formations} = await axios.get(`${url}/api/formations/categorie/${categorie}`)
+    const {data: categories} = await axios.get(`${url}/api/categoriesFormation`);
+    const {data: category} = await axios.get(`${url}/api/categoriesFormation/${categorie}`)
     return {
         props: {
             formations,
@@ -69,4 +78,4 @@ export async function getStaticProps(context) {
             category
         }
     } 
-}
+} */

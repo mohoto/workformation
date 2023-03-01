@@ -4,11 +4,20 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '../../components/financements/Content'
 import Sidebar from '../../components/financements/Sidebar'
+import useSWR from 'swr'
 
-export default function Financemnt({financements, financement}) {
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+/* export default function Financemnt({financements, financement}) { */
+export default function Financemnt() {
 
 const router = useRouter();
 const {slug} = router.query
+
+//A retirer
+const {data: financement} = useSWR(`/api/financements/${slug}`, fetcher);
+const {data: financements} = useSWR('/api/financements', fetcher);
 
   return (
     <>
@@ -35,9 +44,9 @@ const {slug} = router.query
   )
 }
 
-export async function getStaticPaths() {
-    const url = `${process.env.NEXT_API_URL}/api`;
-    const {data} = await axios.get(`${url}/financements`);
+/* export async function getStaticPaths() {
+    const url = process.env.NEXT_API_URL;
+    const {data} = await axios.get(`${url}/api/financements`);
     const paths = data.map(financement => {
         return {
             params: {
@@ -52,14 +61,14 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-    const url = `${process.env.NEXT_API_URL}/api`;
-    const {data:financements} = await axios.get(`${url}/financements`)
+    const url = process.env.NEXT_API_URL;
+    const {data:financements} = await axios.get(`${url}/api/financements`)
     const {params} = context;
-    const {data: financement} = await axios.get(`${url}/financements/${params.slug}`);
+    const {data: financement} = await axios.get(`${url}/api/financements/${params.slug}`);
     return {
         props: {
             financements,
             financement
         }
     }
-}
+} */

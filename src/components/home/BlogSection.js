@@ -12,7 +12,7 @@ export default function BlogSection({selectedArticles}) {
                 </div>
             </div>
             <div className="grid mt-20 gap-x-6 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
-                {selectedArticles && selectedArticles.map(article => (
+                {selectedArticles && selectedArticles.filter(article => article.id === "1" || article.id === "6" || article.id === "2").map(article => (
 
                     <div key={article.id} className="bg-white shadow-lg hover:shadow-2xl group">
                         <div className="relative w-full border-b-4 aspect-[16/9] border-bleue-karoy-100 group-hover:border-second-50 rounded-t-md">

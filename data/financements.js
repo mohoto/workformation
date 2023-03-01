@@ -103,7 +103,7 @@ export const financements = [
         title: "Financement par l'AGEFIPH",
         slug: "financement-agefiph",
         link: "/financement/financement-agefiph",
-        image: "/images/financements/logo-agefiph.png",
+        image: "/images/financements/logo-agephip.png",
         metaDescription: "L'Agefiph est une organisation à but non lucratif créée en 1987 pour aider les personnes en situation de handicap à trouver un emploi et à y demeurer.",
         content: [
             {

@@ -10,15 +10,23 @@ import {FaRegBookmark} from 'react-icons/fa'
 import Accordion from '@/components/formations/Accordion'
 import Tab from '@/components/formations/Tab'
 import RappelSidebar from '@/components/common/section-rappel/RappelSidebar'
+import useSWR from 'swr'
+
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 
-export default function Formation({formation}) {
+// export default function Formation({formation}) {
+  export default function Formation() {
 
   const router = useRouter();
-
   const {slug} = router.query;
 
   const [index, setIndex] = useState('');
+
+
+    //A retirer
+    const {data: formation} = useSWR(`/api/formations/${slug}`, fetcher);
 
 
   return (
@@ -56,13 +64,13 @@ export default function Formation({formation}) {
             </div>
             <div className="flex flex-col mt-10 space-y-6 md:space-x-10 md:flex-row md:space-y-0">
               <div className="flex items-center">
-                <HiOutlineUsers size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation.admission}</span>
+                <HiOutlineUsers size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation?.admission}</span>
               </div>
               <div className="flex items-center">
-                <HiOutlineBadgeCheck size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation.evaluation}</span>
+                <HiOutlineBadgeCheck size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation?.evaluation}</span>
               </div>
               <div className="flex items-center">
-                <SlGraduation size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation.certification}</span>
+                <SlGraduation size={20} className="mr-2 text-second-50"/><span className="text-white font-extralight">{formation?.certification}</span>
               </div>
             </div>   
           </div>
@@ -92,10 +100,10 @@ export default function Formation({formation}) {
               <div className="bg-white rounded-lg shadow-card">
                   <div className="relative aspect-[9/6] w-full">
                       <Image 
-                      src={formation.image}
+                      src={formation?.image}
                       fill
                       className="rounded-t-md"
-                      alt={`Illustration de ${formation.title}`}
+                      alt={`Illustration de ${formation?.title}`}
                       />
                   </div>
                   <div className="flex flex-col p-4 mt-4 space-y-6">
@@ -113,9 +121,9 @@ export default function Formation({formation}) {
   )
 }
 
-export async function getStaticPaths() {
-  const url = `${process.env.NEXT_API_URL}/api`;
-  const {data: formations} = await axios.get(`${url}/formations`)
+/* export async function getStaticPaths() {
+  const url = process.env.NEXT_API_URL;
+  const {data: formations} = await axios.get(`${url}/api/formations`)
   const paths = formations.map(formation => {
     return {
       params: {
@@ -131,12 +139,12 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  const url = `${process.env.NEXT_API_URL}/api`;
+  const url = process.env.NEXT_API_URL;
     const {slug} = context.params;
-    const {data:formation} = await axios.get(`${url}/formations/${slug}`);
+    const {data:formation} = await axios.get(`${url}/api/formations/${slug}`);
     return {
       props: {
         formation
       }
     }
-}
+} */

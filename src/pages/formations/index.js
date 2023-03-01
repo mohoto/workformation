@@ -3,8 +3,17 @@ import Head from 'next/head'
 import axios from 'axios'
 import SectionRappel from '@/components/common/section-rappel/SectionRappel'
 import Content from '@/components/formations/Content'
+import useSWR from 'swr'
 
-export default function Formations({formations, categories}) {
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+// export default function Formations({formations, categories}) {
+    export default function Formations() {
+
+        //A retirer
+        const {data: formations} = useSWR('/api/formations', fetcher);
+        const {data: categories} = useSWR('/api/categoriesFormation', fetcher);
 
     return (
         <>
@@ -34,14 +43,14 @@ export default function Formations({formations, categories}) {
     )
 }
 
-export async function getStaticProps() {
-    const url = `${process.env.NEXT_API_URL}/api`;
-    const {data: formations} = await axios.get(`${url}/formations`)
-    const {data: categories} = await axios.get(`${url}/categoriesFormation`);
+/* export async function getStaticProps() {
+    const url = process.env.NEXT_API_URL;
+    const {data: formations} = await axios.get(`${url}/api/formations`)
+    const {data: categories} = await axios.get(`${url}/api/categoriesFormation`);
     return {
         props: {
             formations,
             categories
         }
     }
-}
+} */

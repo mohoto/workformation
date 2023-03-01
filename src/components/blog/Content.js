@@ -48,9 +48,9 @@ export default function Content({article}) {
                     ))}
                 </div>
                 <div className="p-6 rounded-md bg-second-50">
-                    <p className="mb-2 text-white">{article.formationLinkCard}</p>
-                    <Link href={`/formations/${article.formationLink}`} className="flex items-center mt-2 text-gray-100 underline hover:text-bleue-karoy-100">
-                        <BiChevronsRight size={30} />Voir {article.formationTextLink}
+                    <p className="mb-2 text-white">{article?.formationLinkCard}</p>
+                    <Link href={`/formations/${article?.formationLink}`} className="flex items-center mt-2 text-gray-100 underline hover:text-bleue-karoy-100">
+                        <BiChevronsRight size={30} />Voir {article?.formationTextLink}
                     </Link>
                 </div>
             </div>

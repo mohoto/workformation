@@ -8,13 +8,19 @@ import Hero from '../components/home/Hero'
 import SectionFormationTwo from '../components/home/SectionFormationTwo'
 import Services from '@/components/home/Services'
 import BlogSection from '@/components/home/BlogSection'
+import useSWR from 'swr'
+
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 //const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({selectedFormations, selectedArticles}) {
-
-  const url = process.env.NEXT_PUBLIC_API_KEY;
-  console.log('url:', url)
+// export default function Home({selectedFormations, selectedArticles}) {
+  export default function Home() {
+  
+  //A retirer
+  const {data: selectedFormations} = useSWR('/api/formations', fetcher);
+  const {data: selectedArticles, error} = useSWR('/api/articles', fetcher);
   
   return (
     <>
@@ -32,21 +38,21 @@ export default function Home({selectedFormations, selectedArticles}) {
         <Formations selectedFormations={selectedFormations}/>
         <FinancementSection />
         <SectionRappel />
-         
+        <BlogSection selectedArticles={selectedArticles} />
         <Centres />
       </main>
     </>
   )
 }
 
-export async function getStaticProps() {
-  const url = `${process.env.NEXT_API_URL}/api`;
-  const {data: formations} = await axios.get(`${url}/formations`);
-  
+/* export async function getStaticProps() {
+  const url = process.env.NEXT_API_URL;
+  const {data: formations} = await axios.get(`${url}/api/formations`);
+  const {data: articles} = await axios.get(`${url}/api/articles`);
   return {
     props: {
       selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11"),
-      
+      selectedArticles: articles.filter(article => article.id === "1" || article.id === "6" || article.id === "2"),
     }
   }
-} 
+} */ 

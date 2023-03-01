@@ -4,11 +4,21 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '../../components/services/Content'
 import Sidebar from '../../components/services/SideBar'
+import useSWR from 'swr'
 
-export default function Service({service, services}) {
+//important to return only result, not Promise
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+// export default function Service({service, services}) {
+export default function Service() {
 
 const router = useRouter();
 const {slug} = router.query
+
+    //A retirer
+    const {data: service} = useSWR(`/api/services/${slug}`, fetcher);
+    const {data: services} = useSWR('/api/services', fetcher);
+
 
 /* const [services, setServices] = useState();
 console.log('services:', services)
@@ -56,7 +66,7 @@ useEffect(() => {
   )
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
     const url = `${process.env.NEXT_API_URL}/api`;
     const {data} = await axios.get(`${url}/services`);
     const paths = data.map(service => {
@@ -70,18 +80,18 @@ export async function getStaticPaths() {
         paths: paths,
         fallback: false
     }
-}
+} */
 
-export async function getStaticProps(context) {
-    const url = `${process.env.NEXT_API_URL}/api`;
+/* export async function getStaticProps(context) {
+    const url = process.env.NEXT_API_URL;
     const {params} = context;
-    const {data:services} = await axios.get(`${url}/services`);
-    const {data:service} = await axios.get(`${url}/services/${params.slug}`);
+    const {data:services} = await axios.get(`${url}/api/services`);
+    const {data:service} = await axios.get(`${url}/api/services/${params.slug}`);
     return {
         props: {
             services,
             service
         }
     }
-}
+} */
 
