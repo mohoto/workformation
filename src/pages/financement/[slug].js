@@ -4,20 +4,11 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '../../components/financements/Content'
 import Sidebar from '../../components/financements/Sidebar'
-import useSWR from 'swr'
 
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
-
-/* export default function Financemnt({financements, financement}) { */
-export default function Financemnt() {
+export default function Financemnt({financements, financement}) {
 
 const router = useRouter();
 const {slug} = router.query
-
-//A retirer
-const {data: financement} = useSWR(`/api/financements/${slug}`, fetcher);
-const {data: financements} = useSWR('/api/financements', fetcher);
 
   return (
     <>
@@ -44,7 +35,7 @@ const {data: financements} = useSWR('/api/financements', fetcher);
   )
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
     const url = process.env.NEXT_API_URL;
     const {data} = await axios.get(`${url}/api/financements`);
     const paths = data.map(financement => {
@@ -71,4 +62,4 @@ export async function getStaticProps(context) {
             financement
         }
     }
-} */
+} 

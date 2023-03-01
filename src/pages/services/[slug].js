@@ -4,42 +4,11 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '../../components/services/Content'
 import Sidebar from '../../components/services/SideBar'
-import useSWR from 'swr'
 
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
+export default function Service({service, services}) {
 
-// export default function Service({service, services}) {
-export default function Service() {
-
-const router = useRouter();
-const {slug} = router.query
-
-    //A retirer
-    const {data: service} = useSWR(`/api/services/${slug}`, fetcher);
-    const {data: services} = useSWR('/api/services', fetcher);
-
-
-/* const [services, setServices] = useState();
-console.log('services:', services)
-
-const [service, setService] = useState();
-console.log('service:', service)
-
-const getServices = async () => {
-    const {data} = await axios.get(`/api/services`)
-    setServices(data);
-}
-
-const getService = async () => {
-    const {data} = await axios.get(`/api/services/${slug}`)
-    setService(data);
-}
-
-useEffect(() => {
-    getServices();
-    getService();
-}, [slug]) */
+    const router = useRouter();
+    const {slug} = router.query
 
   return (
     <>
@@ -66,9 +35,9 @@ useEffect(() => {
   )
 }
 
-/* export async function getStaticPaths() {
-    const url = `${process.env.NEXT_API_URL}/api`;
-    const {data} = await axios.get(`${url}/services`);
+export async function getStaticPaths() {
+    const url = process.env.NEXT_API_URL;
+    const {data} = await axios.get(`${url}/api/services`);
     const paths = data.map(service => {
         return {
             params: {
@@ -80,9 +49,9 @@ useEffect(() => {
         paths: paths,
         fallback: false
     }
-} */
+} 
 
-/* export async function getStaticProps(context) {
+export async function getStaticProps(context) {
     const url = process.env.NEXT_API_URL;
     const {params} = context;
     const {data:services} = await axios.get(`${url}/api/services`);
@@ -93,5 +62,5 @@ useEffect(() => {
             service
         }
     }
-} */
+}
 

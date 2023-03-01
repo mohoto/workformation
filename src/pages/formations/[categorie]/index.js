@@ -4,22 +4,11 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import SectionRappel from '@/components/common/section-rappel/SectionRappel'
 import Content from '@/components/formations/Content'
-import useSWR from 'swr'
 
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
-
-// export default function FormationsByCategory({formations, categories, category}) {
-export default function FormationsByCategory() {
+export default function FormationsByCategory({formations, categories, category}) {
 
     const router = useRouter();
     const {categorie} = router.query;
-    //const title = `Nos formations ${category?.name}`
-
-    //A retirer
-    const {data: formations} = useSWR(`/api/formations/categorie/${categorie}`, fetcher);
-    const {data: categories} = useSWR('/api/categoriesFormation', fetcher);
-    const {data: category} = useSWR(`/api/categoriesFormation/${categorie}`, fetcher);
 
     return (
         <>
@@ -49,7 +38,7 @@ export default function FormationsByCategory() {
     )
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
     const url = process.env.NEXT_API_URL;
     const {data:formations} = await axios.get(`${url}/api/formations`)
     const paths = formations.map(formation => {
@@ -78,4 +67,4 @@ export async function getStaticProps(context) {
             category
         }
     } 
-} */
+} 

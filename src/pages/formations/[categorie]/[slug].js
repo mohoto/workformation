@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import {useRouter} from 'next/router'
 import axios from 'axios'
 import {HiOutlineLocationMarker, HiOutlineCalendar, HiOutlineUsers, HiOutlineBadgeCheck} from 'react-icons/hi'
 import {SlGraduation} from 'react-icons/sl'
@@ -10,24 +9,11 @@ import {FaRegBookmark} from 'react-icons/fa'
 import Accordion from '@/components/formations/Accordion'
 import Tab from '@/components/formations/Tab'
 import RappelSidebar from '@/components/common/section-rappel/RappelSidebar'
-import useSWR from 'swr'
-
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
 
 
-// export default function Formation({formation}) {
-  export default function Formation() {
-
-  const router = useRouter();
-  const {slug} = router.query;
+export default function Formation({formation}) {
 
   const [index, setIndex] = useState('');
-
-
-    //A retirer
-    const {data: formation} = useSWR(`/api/formations/${slug}`, fetcher);
-
 
   return (
     <>
@@ -121,7 +107,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
   )
 }
 
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
   const url = process.env.NEXT_API_URL;
   const {data: formations} = await axios.get(`${url}/api/formations`)
   const paths = formations.map(formation => {
@@ -147,4 +133,4 @@ export async function getStaticProps(context) {
         formation
       }
     }
-} */
+} 

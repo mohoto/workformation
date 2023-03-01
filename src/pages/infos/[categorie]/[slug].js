@@ -4,20 +4,11 @@ import {useRouter} from 'next/router'
 import axios from 'axios'
 import Content from '@/components/blog/Content'
 import Sidebar from '@/components/blog/Sidebar'
-import useSWR from 'swr'
 
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
+export default function Article({article, articles, categories}) {
 
-// export default function Article({article, articles, categories}) {
-export default function Article() {
-
-    //A retirer
     const router = useRouter();
     const {slug} = router.query
-    const {data: articles} = useSWR('/api/articles', fetcher);
-    const {data: categories} = useSWR('/api/categoriesBlog', fetcher);
-    const {data: article} = useSWR(`/api/articles/${slug}`, fetcher);
 
   return (
     <>
@@ -43,7 +34,7 @@ export default function Article() {
     </>
   )
 }
-/* export async function getStaticPaths() {
+export async function getStaticPaths() {
     const url = process.env.NEXT_API_URL;
     const {data: articles} = await axios.get(`${url}/api/articles`);
     const paths = articles.map(article => {
@@ -73,4 +64,4 @@ export async function getStaticProps(context) {
             article
         }
     }
-} */
+} 

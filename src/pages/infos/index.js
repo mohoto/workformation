@@ -3,17 +3,8 @@ import Head from 'next/head'
 import axios from 'axios'
 import Content from '@/components/blogs/Content'
 import Sidebar from '@/components/blogs/Sidebar'
-import useSWR from 'swr'
-
-//important to return only result, not Promise
-const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Article({articles, categories}) {
-//export default function Article() {
-
-//A retirer
-/* const {data: articles} = useSWR('/api/articles', fetcher);
-const {data: categories} = useSWR('/api/categoriesBlog', fetcher); */
 
   return (
     <>
