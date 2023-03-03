@@ -12,9 +12,9 @@ export default function Content({formations, categories, categorie}) {
             <Filter categories={categories} categorie={categorie}/> 
         </section>
         <section className="lg:col-span-3">
-            <div className="grid grid-flow-row gap-y-8">
+            <div className="grid grid-flow-row gap-y-20 lg:gap-y-8">
                 {formations && formations.map(formation => (
-                <div key={formation.id} className="p-4 bg-white border border-gray-200 rounded-md hover:shadow-lg md:flex md:flex-row md:space-x-3 group">
+                <div key={formation.id} className="p-4 bg-white border-2 border-gray-200 rounded-md hover:shadow-lg md:flex md:flex-row md:space-x-3 group">
                     <div className="relative md:flex-[0.4]">
                         <div className="relative w-full overflow-hidden aspect-[9/6] lg:w-auto">
                             <Image 
