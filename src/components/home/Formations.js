@@ -32,7 +32,7 @@ export default function Formations({selectedFormations}) {
             <div className="grid mt-20 gap-x-10 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
                 {selectedFormations && selectedFormations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11").map(formation => (
 
-                    <div key={formation.id} className="p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl">
+                    <div key={formation.id} className="p-4 bg-white rounded-lg shadow-lg group hover:shadow-2xl">
                         <div className="relative w-full aspect-[9/6]">
                             <Image 
                             src={formation.image}
@@ -47,7 +47,7 @@ export default function Formations({selectedFormations}) {
                                     </div>
                                 ))}
                             </div>
-                            <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition duration-300 ease-in-out bg-fixed rounded-t-lg opacity-0 hover:opacity-50 bg-bleue-karoy-100"></div>
+                            <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition duration-300 ease-in-out bg-fixed rounded-t-lg opacity-0 group-hover:opacity-30 bg-bleue-karoy-100"></div>
                         </div>
                         <div className="mt-6">
                             <Link href={`/formations/${formation.categorieSlug}/${formation.slug}`}>

@@ -40,7 +40,7 @@ export default function Formation({formation}) {
                 <span className="text-lg font-light text-white uppercase">{formation?.categorie}</span>
               </div>
             </div>
-            <h1 className="text-2xl font-semibold text-white">{formation?.title}</h1>
+            <h1 className="text-2xl font-semibold text-white max-w-[60%] !leading-snug">{formation?.title}</h1>
             <div className="flex mt-6 space-x-2">
                   {formation?.types && formation.types.map(type => (
                     <div key={type} className="px-2 py-1 rounded-md bg-second-50">

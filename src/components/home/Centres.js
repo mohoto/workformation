@@ -17,7 +17,7 @@ export default function Centres() {
                     <span>N'hésitez-pas</span>
                     <h3 className="text-xl"> Contactez-nous!</h3>
                     <a href="tel:+33-1-45-76-78-98" className="flex items-center justify-center mt-4 text-2xl">
-                        <BsTelephoneInbound size={20} className="inline-block mr-2" />01 45 76 78 98
+                        <BsTelephoneInbound size={20} className="inline-block mr-2" />01 84 80 53 44
                     </a>
                 </div>
                 {/* <div className="flex justify-center">

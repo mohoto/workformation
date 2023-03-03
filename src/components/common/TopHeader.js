@@ -14,7 +14,7 @@ export default function TopHeader() {
         <div>
             <a href="tel:+33-1-45-76-78-98" className="flex items-center text-sm md:text-base">
               <BsTelephoneInbound size={20} className="mr-2" />
-              01 45 76 78 98
+              01 84 80 53 44
             </a>
         </div>
     </div>

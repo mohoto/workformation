@@ -22,9 +22,9 @@ export default function NotreCentte(){
                         </div>
                     </div>
                     <div>
-                        <div className="flex flex-col mt-8 md:mt-20 md:flex-row md:items-center">
-                            <div className="flex-1 mb-6 md:mb-0">
-                                <div className="relative w-full overflow-hidden rounded-lg md:h-80 h-60">
+                        <div className="flex flex-col justify-center mt-8 md:mt-20 md:flex-row md:items-center">
+                            <div className="flex justify-center flex-1 mb-6 md:mb-0">
+                                <div className="relative overflow-hidden rounded-lg w-80 h-80">
                                     <Image 
                                     src="/images/local/work-formation-devanture.jpg"
                                     fill

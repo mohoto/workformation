@@ -120,7 +120,7 @@ export const articles= [
         image: "/images/blog/web/creation-site-web-entreprise.jpg",
         formationLinkCard: "Notre centre propose des formations pour permettre aux entreprises de concevoir et de gérer des sites web professionnels adaptés à leur activité commerciale.",
         formationLink: "site-web",
-        formationTextLink: "les formations pour créer des sites web",
+        formationTextLink: "les formations pour la création de sites web",
         metaDescription: "",
         contents: [
             {
@@ -397,15 +397,15 @@ export const articles= [
     },
     { 
         id: "5",
-        title: "Se former à la création de site web : un atout pour réussir sur le marché du travail",
+        title: "La création de site web : un atout pour les demandeurs d'emploi sur le marché du travail",
         slug: "se-former-a-la-creation-de-site-web-un-atout-pour-reussir-sur-le-marche-du-travail",
         link: "/infos/se-former-a-la-creation-de-site-web-un-atout-pour-reussir-sur-le-marche-du-travail",
         categorie: "web",
         categorieSlug: "web",
         image: "/images/blog/web/formation-creation-site-web-demandeurs-emploi-2.jpg",
-        formationLinkCard: "Notre centre propose des formations pour permettre aux entreprises de concevoir et de gérer des sites web professionnels adaptés à leur activité commerciale.",
-        formationLink: "formations/bureautique",
-        formationTextLink: "les formations Site web",
+        formationLinkCard: "En tant que demandeur d'emploi, suivre nos formations en création de site web peut vous donner un avantage compétitif sur le marché du travail. Vous pourrez augmenter vos chances de trouver un emploi dans de nombreuses entreprises qui recherchent des professionnels qualifiés pour leur présence en ligne.",
+        formationLink: "site-web",
+        formationTextLink: "les formations pour la création de sites web",
         metaDescription: "",
         contents: [
             {

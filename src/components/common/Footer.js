@@ -47,7 +47,7 @@ export default function Footer() {
                     <div className="text-lg md:text-base">
                         <p className="flex items-center mb-1"><BsTelephoneInbound size={20} className="inline-block mr-2" />Telephone:</p>
                         <a href="tel:+33-1-45-76-78-98" className="flex items-center">
-                            01 45 76 78 98
+                        01 84 80 53 44
                         </a>
                     </div>
                     <div className="text-lg md:text-base">

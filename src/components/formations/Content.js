@@ -14,7 +14,7 @@ export default function Content({formations, categories, categorie}) {
         <section className="lg:col-span-3">
             <div className="grid grid-flow-row gap-y-8">
                 {formations && formations.map(formation => (
-                <div key={formation.id} className="p-4 bg-white border border-gray-200 rounded-md hover:shadow-lg md:flex md:flex-row md:space-x-3">
+                <div key={formation.id} className="p-4 bg-white border border-gray-200 rounded-md hover:shadow-lg md:flex md:flex-row md:space-x-3 group">
                     <div className="relative md:flex-[0.4]">
                         <div className="relative w-full overflow-hidden aspect-[9/6] lg:w-auto">
                             <Image 
@@ -23,7 +23,7 @@ export default function Content({formations, categories, categorie}) {
                             className="object-contain object-left transition duration-500 ease-in-out transform rounded-md cursor-pointer hover:scale-110"
                             alt={`illustration de la ${formation.title}`}
                             />
-                            <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition-all duration-300 ease-in-out bg-fixed opacity-0 hover:opacity-50 bg-bleue-karoy-100"></div>
+                            <div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden transition-all duration-300 ease-in-out bg-fixed opacity-0 group-hover:opacity-30 bg-bleue-karoy-100"></div>
                         </div>
                     </div>
                     <div className="mt-4 lg:mt-0 md:flex-[0.6]">
