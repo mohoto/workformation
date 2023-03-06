@@ -1,21 +1,39 @@
 import React, {useState} from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import axios from 'axios'
 const InputMask = dynamic(() => {return import ('react-input-mask-next')}, {ssr: false});
 
 export default function Contact() {
 
     const initialValues = {
-        name: "",
+        nom: "",
         email: "",
         phoneNumber: "",
         message: ""
     }
 
     const [values, setValues] = useState(initialValues);
+    const [response, setResponse] = useState(false);
 
-    const hangleChange = e => {
+    const handleChange = e => {
         setValues({...values, [e.target.name]: e.target.value})
+    }
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const {data} = await axios.post('/api/contact', values)
+            if(data.message === "EMAIL_ENVOYÉ") {
+                setResponse(true)
+                setValues(initialValues)
+            }
+            
+            
+        } catch (error) {
+            console.log(error)
+        }
     }
 
   return (
@@ -25,7 +43,8 @@ export default function Contact() {
             <meta name="description" content="Des questions? Envoyer votre message. Nous vous répondrons dans les plus brefs délais. Ou envoyez un mail à infos@workformation.com" />
             <meta property="og-title" content="Contact" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-work-formation-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
         </Head> 
         <main className="px-6 pb-20 mt-20 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
             <h1 className="text-3xl font-semibold text-center md:text-4xl">CONTACT</h1>
@@ -68,57 +87,74 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <form className="mt-6 md:mt-0">
-                    <div className="flex flex-col">
-                        <input 
-                        type="text" 
-                        name="name"
-                        value={values.name} 
-                        placeholder="Nom et prénom" 
-                        className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
-                        onChange={hangleChange}
-                        />
-                    </div>
-                    <div className="flex flex-col mt-2">
-                        <input 
-                        type="email" 
-                        name="email"
-                        value={values.email} 
-                        placeholder="Email" 
-                        className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
-                        onChange={hangleChange}
-                        />
-                    </div>
-                    <div className="flex flex-col mt-2">
-                        <InputMask 
-                        mask="99 99 99 99 99"
-                        name="phoneNumber" 
-                        value={values.phoneNumber} 
-                        placeholder="Numero de telephone(facultatif)"
-                        className="block px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
-                        onChange={hangleChange}
-                        /> 
-                    </div>
-                    <div className="flex flex-col mt-2">
-                        <textarea
-                        rows="5" 
-                        name="message"
-                        value={values.message}  
-                        placeholder="Votre message" 
-                        className="px-3 py-3 mt-2 font-semibold text-gray-800 bg-white border border-gray-400 rounded-lg w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none"
-                        onChange={hangleChange}
-                        >
-                        </textarea>
-                    </div>
-                    <div className="flex justify-center mt-6">
-                        <button 
-                        className="px-10 py-2 text-lg text-white transition duration-200 ease-in-out rounded-3xl bg-second-50 hover:bg-bleue-karoy-100 focus:bg-bleue-karoy-50" 
-                        
-                        >
-                            Envoyer
-                        </button>
-                    </div>
-                </form>
+                <div>
+                    {response && (
+                        <div>
+                            <div className="flex items-center px-4 py-3 text-sm text-white bg-green-600 rounded-md" role="alert">
+                                <div className="flex">
+                                    <div className="py-1">
+                                        <svg className="w-6 h-6 mr-4 text-gray-200 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm">Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    <form className="mt-6 md:mt-0">
+                        <div className="flex flex-col">
+                            <input 
+                            type="text" 
+                            name="nom"
+                            value={values.nom} 
+                            placeholder="Nom et prénom" 
+                            className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
+                            onChange={handleChange}
+                            />
+                        </div>
+                        <div className="flex flex-col mt-2">
+                            <input 
+                            type="email" 
+                            name="email"
+                            value={values.email} 
+                            placeholder="Vore email" 
+                            className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
+                            onChange={handleChange}
+                            />
+                        </div>
+                        <div className="flex flex-col mt-2">
+                            <InputMask 
+                            mask="99 99 99 99 99"
+                            name="phoneNumber" 
+                            value={values.phoneNumber} 
+                            placeholder="Numero de telephone(facultatif)"
+                            className="block px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
+                            onChange={handleChange}
+                            /> 
+                        </div>
+                        <div className="flex flex-col mt-2">
+                            <textarea
+                            rows="5" 
+                            name="message"
+                            value={values.message}  
+                            placeholder="Votre message" 
+                            className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none"
+                            onChange={handleChange}
+                            >
+                            </textarea>
+                        </div>
+                        <div className="flex justify-center mt-6">
+                            <button
+                            type="submit"
+                            className="px-10 py-2 text-lg text-white transition duration-200 ease-in-out rounded-3xl bg-second-50 hover:bg-bleue-karoy-100 focus:bg-bleue-karoy-50" 
+                            onClick={handleSubmit}
+                            >
+                                Envoyer
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div className="grid grid-cols-1 mt-4 md:grid-cols-2 md:gap-x-6">
                 <div className="mt-10">

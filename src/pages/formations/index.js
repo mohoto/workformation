@@ -13,7 +13,8 @@ export default function Formations({formations, categories}) {
                 <meta name="description" content="La formation permet d’acquérir des compétences professionnelles. Nos formations sont accessibles à tous, salariés, indépendants ou demandeurs d’emploi." />
                 <meta property="og-title" content="Nos formations" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-work-formation-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
             </Head> 
             <main>
                 <div className="flex flex-col px-6 pb-20 mt-20 md:px-6 lg:px-6 xl:px-12 2xl:px-32 3xl:px-52">

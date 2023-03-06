@@ -17,7 +17,8 @@ const {slug} = router.query
             <meta name="description" content={financement?.metaDescription} />
             <meta property="og-title" content={financement?.title} />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-work-formation-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
         </Head>    
         <main>
             <div className="flex px-6 py-8 mt-20 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52">

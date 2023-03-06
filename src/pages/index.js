@@ -20,7 +20,8 @@ export default function Home({selectedFormations, selectedArticles}) {
         <meta name="description" content="WORK FORMATION est un organisme de formation qui aide les personnes à développer leurs compétences professionnelles ou à se reconvertir professionnellement." />
         <meta property="og-title" content="Dévellopez vos compétences professionnelles" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-work-formation-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
       </Head> 
       <main>
         <Hero />
