@@ -25,8 +25,6 @@ export default async function handler(req, res) {
         from: "work.formation75@gmail.com",
         subject: "Nouveau message du site web",
         templateId: "d-fb48b6f7d03d41f5852a16f850479d40",
-        //text: message,
-        //html: message.replace(/\r\n/g, '<br>'),
         dynamic_template_data: {
             nom: nom.toUpperCase(),
             email: email,

@@ -80,7 +80,7 @@ export default function RappelSidebar() {
         e.preventDefault();
         if(!nom || !prenom || !phoneNumber || !formationCategorie) {
             setErrorMessage(true);
-            
+            return;
         }
         try {
             const {data} = await axios.post('/api/rappel', values)
@@ -119,7 +119,12 @@ export default function RappelSidebar() {
                                 <p className="mb-2 font-semibold tracking-wide text-center">Demandez à être rappelé par un de nos conseillers.</p>
                             </div>
                             {errorMessage &&
-                                <p className="font-semibold tracking-wide text-center text-red-700">Veuillez renseigner tous les champs.</p>
+                                <div className="flex items-center px-4 py-3 text-sm text-white bg-red-600 rounded-md" role="alert">
+                                    <div className="flex items-center">
+                                        <svg className="w-6 h-6 mr-4 text-gray-200 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>
+                                        <p className="text-sm">Veuillez remplir tous les champs</p>
+                                    </div>
+                                </div>
                             }
                             <form className="mt-6 space-y-4">
                                 <input 
@@ -186,7 +191,7 @@ export default function RappelSidebar() {
                     )}
                         <div className="mt-6 text-center">
                             <button 
-                            className={`text-white rounded-2xl bg-second-50 ${!btnDiseabled ? 'hover:bg-white focus:bg-white hover:text-bleue-karoy-100' : 'hover:bg-second-50'} p-3 ${spinner ? 'w-14 rounded-full' : undefined}`}
+                            className={`text-white rounded-2xl bg-second-50 focus:bg-second-50 ${!btnDiseabled ? 'hover:bg-white hover:text-bleue-karoy-100 focus:hover:text-white' : 'hover:bg-second-50'} p-3 ${spinner ? 'w-14 rounded-full' : undefined}`}
                             onClick={submitForm}
                             disabled={btnDiseabled}
                             >
