@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         //text: message,
         //html: message.replace(/\r\n/g, '<br>'),
         dynamic_template_data: {
-            nom: nom,
+            nom: nom.toUpperCase(),
             email: email,
             telephone: phoneNumber,
             message: message

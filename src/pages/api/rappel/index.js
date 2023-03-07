@@ -10,8 +10,8 @@ export default function handler(req, res){
         subject: "Nouveau message du site web",
         templateId: "d-a2b3604a2dcc40d4bbbafa0f48614665",
         dynamic_template_data: {
-            nom: nom,
-            nom: prenom,
+            nom: nom.toUpperCase(),
+            prenom: prenom.toUpperCase(),
             email: email,
             telephone: phoneNumber,
             categorie: formationCategorie

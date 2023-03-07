@@ -91,6 +91,7 @@ export default function SectionRappel() {
                 setSpinner(false);
                 if(data.message === "DEMANDE_RAPPEL_ENVOYÉ") {
                     setSucessMessage(true);
+                    setBtnDiseabled(true)
                 }
                 scrollToContent();
             },2000) 
@@ -214,7 +215,7 @@ export default function SectionRappel() {
                         <button 
                         className={`text-white rounded-2xl bg-second-50 hover:bg-bleue-karoy-100 focus:bg-bleue-karoy-100 p-3 ${spinner ? 'w-14 rounded-full' : undefined}`}
                         onClick={submitForm}
-                        // disabled={!nom || !prenom || !phoneNumber || !formation}
+                        disabled={btnDiseabled}
                         >
                             {!spinner && !sucessMessage ? (
                                 <>
