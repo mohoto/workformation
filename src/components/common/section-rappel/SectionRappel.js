@@ -70,7 +70,6 @@ export default function SectionRappel() {
     const [sucessMessage, setSucessMessage] = useState(false);
 
     const scrollToContent = () => {
-        //const element = document.querySelector('#successMessage');
         const offsetPosition = successMessage.current.getBoundingClientRect().top + 500;
         successMessage.current.scrollIntoView({
             behavior: 'smooth',
@@ -127,7 +126,7 @@ export default function SectionRappel() {
                             {errorMessage &&
                                 <p className="font-semibold tracking-wide text-center text-red-700">Veuillez renseigner tous les champs.</p>
                             }
-                            <div className="mt-6 space-y-4">
+                            <form className="mt-6 space-y-4">
                                 <input 
                                 type="text" 
                                 id="nom"
@@ -199,7 +198,7 @@ export default function SectionRappel() {
                                     styles={colorStyles}
                                     onChange={handleChangeSelect}
                                 />
-                            </div>
+                            </form>
                         </div>
                         ) : (
                         <div className="flex justify-center">

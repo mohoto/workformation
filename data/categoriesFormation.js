@@ -24,7 +24,7 @@ export const categoriesFormation = [
       id: "4",
       name: "Site web",
       slug: "site-web",
-      description: "la création d'un site web est aujourd'hui un élément clé de la stratégie de communication et de développement de tout professionnel, permettant de toucher un public plus large et de faciliter les échanges avec les clients et les prospects. Un site web est un élément indispensable pour réussir et prospérer dans un monde de plus en plus connecté.",
+      description: "La création d'un site web est aujourd'hui un élément clé de la stratégie de communication et de développement de tout professionnel, permettant de toucher un public plus large et de faciliter les échanges avec les clients et les prospects. Un site web est un élément indispensable pour réussir et prospérer dans un monde de plus en plus connecté.",
       metaDescription: "Les formations web sont essentielles pour acquérir les compétences numériques nécessaires pour réussir dans un environnement professionnel de plus en plus connecté."
     },
   ]
