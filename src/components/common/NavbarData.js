@@ -44,7 +44,7 @@ const NavbarData = [
             },
             {
                 title: 'AGEPHIP',
-                link: '/financement/financement-agephip'
+                link: '/financement/financement-agefiph' 
             },
             {
                 title: 'CPF TRANSITION PROFESSIONNEL',

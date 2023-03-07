@@ -13,8 +13,10 @@ export default function Contact() {
         message: ""
     }
 
-    const [values, setValues] = useState(initialValues);
+    const [errorMessage, setErrorMessage] = useState(false);
     const [response, setResponse] = useState(false);
+    const [values, setValues] = useState(initialValues);
+    const {nom, email, phoneNumber, message} = values
 
     const handleChange = e => {
         setValues({...values, [e.target.name]: e.target.value})
@@ -23,13 +25,17 @@ export default function Contact() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if(!nom || !email || !phoneNumber || !message) {
+            setErrorMessage(true);
+            return;
+        }
         try {
             const {data} = await axios.post('/api/contact', values)
             if(data.message === "EMAIL_ENVOYÉ") {
+                setErrorMessage(false);
                 setResponse(true)
                 setValues(initialValues)
             }
-            
             
         } catch (error) {
             console.log(error)
@@ -98,6 +104,16 @@ export default function Contact() {
                                     <div>
                                         <p className="text-sm">Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.</p>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    {errorMessage && (
+                        <div>
+                            <div className="flex items-center px-4 py-3 text-sm text-white bg-red-600 rounded-md" role="alert">
+                                <div className="flex items-center">
+                                    <svg className="w-6 h-6 mr-4 text-gray-200 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>
+                                    <p className="text-sm">Veuillez remplir tous les champs</p>
                                 </div>
                             </div>
                         </div>
