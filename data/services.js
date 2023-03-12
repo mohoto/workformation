@@ -126,7 +126,7 @@ export const services = [
                 ]
             },
             {
-                id: "5",
+                id: "6",
                 subTitle: "Les avantages de la formation pour les entreprises",
                 answers: [
                     {id: "1", contenu: "La formation offre donc de nombreux avantages aux entreprises et à leurs employés, notamment en améliorant les compétences et la productivité, en attirant et en retenant les talents, en maintenant la pertinence des compétences et en créant une culture d'apprentissage continu. Les entreprises qui investissent dans le développement de leurs employés peuvent bénéficier d'une main-d'œuvre plus compétente et plus motivée, ce qui peut se traduire par une meilleure performance globale de l'entreprise."},
