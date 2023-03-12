@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Content({service}) {
+    if(service) console.log(service.serviceCard)
     return (
         <div className="px-4 pb-8 md:px-8">
             <div className="pb-5">
@@ -21,9 +22,10 @@ export default function Content({service}) {
                         </div>
                     ))}
                     <div className="p-6 rounded-md bg-second-50">
-                        {service?.serviceCard && service.serviceCard.map(answer => (
+                        {/* {service?.serviceCard && service.serviceCard.map(answer => (
                             <p key={answer.id} className="mb-4 text-white last:mb-0">{answer.contenu}</p>
-                        ))}
+                        ))} */}
+                        <p>Essai d'un texte</p>
                     </div>
                 </div>
             </div>
