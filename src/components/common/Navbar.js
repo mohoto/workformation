@@ -58,7 +58,7 @@ const Navbar = () => {
                 {/* TopHeader */}
                 <TopHeader />
                 <nav ref={navBarRef} className={`bg-white border ${navSticky ? 'fixed top-0 z-50 w-full transition duration-500 ease-in-out shadow-lg' : undefined}`}>
-                    <div className="px-1 py-1 md:px-10">
+                    <div className="px-4 py-1 md:px-10">
                         <div className="flex items-center justify-between">
                             <Link href="/">
                                 <div className="relative w-32 h-12 cursor-pointer md:w-44">
@@ -127,7 +127,7 @@ const Navbar = () => {
                             <div className="lg:hidden">
                                 {/* Mobile-menu */}
                                 <div onClick={() => setOpenMenu(!openMenu)} className="cursor-pointer">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 bg-gray-100">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 bg-gray-100">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                                     </svg>
                                 </div>

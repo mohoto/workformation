@@ -53,7 +53,7 @@ export default function Formations({selectedFormations}) {
                             <Link href={`/formations/${formation.categorieSlug}/${formation.slug}`}>
                                 <h3 className="mt-6 text-lg font-semibold hover:text-second-50 text-bleue-karoy-100">{formation.title}</h3>
                             </Link>
-                            <p className="mt-4 text-sm font-light">{formation.resume}</p>
+                            <p className="mt-4 font-light">{formation.resume}</p>
                             <table className="w-full mt-4 space-y-20 text-sm font-light table-fixed">
                                 <tbody>
                                     <tr>

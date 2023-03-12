@@ -26,12 +26,14 @@ export default function Formation({formation}) {
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
         </Head> 
         <main className="pb-16">
-          <div className="flex px-4 py-10 md:px-6 lg:px-12 xl:px-20 2xl:px-32 3xl:px-52">
-              <Link href="/" className="italic text-light hover:text-second-50">Acceuil</Link>
-              <span className="mx-1 text-light">-</span>
-              <Link href="/formations" className="italic text-light hover:text-second-50">Formations</Link>
-              <span className="mx-1 text-light">-</span>
-              <Link href={`/formations/${formation?.categorieSlug}`} className="italic capitalize text-light hover:text-second-50">{formation?.categorie}</Link>
+          <div className="flex px-6 py-8 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
+            <div className="mt-4">
+              <Link href="/" className="text-light hover:text-second-50">Acceuil</Link>
+              <span className="mx-1 text-light">/</span>
+              <Link href="/formations" className="text-light hover:text-second-50">Formations</Link>
+              <span className="mx-1 text-light">/</span>
+              <Link href={`/formations/${formation?.categorieSlug}`} className="capitalize text-light hover:text-second-50">{formation?.categorie}</Link>
+            </div>
           </div>
           <div className="px-6 py-10 bg-bleue-karoy-100 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
             <div className="flex items-start mb-6">

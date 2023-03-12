@@ -1625,7 +1625,7 @@ export const formations = [
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
   resume: "Cette formation destinée à toute personne, sans connaissance de base, pour créer un site web avec WordPress. Cette plateforme(CMS) permet de créer et de gérer efficacement le contenu de son site web.",
-  image: "/images/formations/web/formation-wordpress-3.jpg",
+  image: "/images/formations/web/formation-wordpress-4.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Wordpress pour les débutants est conçue pour aider les personnes souhaitant créer un site web à comprendre les fondements de Wordpress."},
     {id: "2", fontWeight: "font-normal", content: "Pour les entreprises, les artisans et les auto-entrepreneurs, il est important d'avoir une présence en ligne pour faire connaître leurs produits et services. WordPress peut être un excellent outil pour cela, offrant de nombreux avantages."},

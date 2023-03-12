@@ -7,6 +7,10 @@ export const services = [
         linkText: "Formation pour particuliers",
         image: "/images/financements/logo-pole-emploi-900x500.jpg",
         introduction: "La formation professionnelle apporte de nombreux avantages aux particuliers, que ce soit pour les salariés, les indépendants, les auto-entrpreneurs, les demandeurs d'emploi ou les personnes en reconversion professionnelle. Elle les aide à se démarquer sur le marché du travail, à acquérir de nouvelles compétences et connaissances, et à fournir un soutien moral pour atteindre leurs objectifs professionnels.",
+        serviceCard: [
+                {id: "1", contenu: "Notre centre de formation propose des formation adaptées aux particuliers, qu'ils soient salariés, indépendants, auto-entrepreneurs ou demandeurs d'emploi. Nous sommes conscients que la formation est essentielle pour les particuliers qui cherchent à améliorer leurs compétences, à développer leur carrière ou à lancer leur entreprise."},
+                {id: "2", contenu: "Nous proposons des formations dans des domaines variés et nous sommes en mesure de proposer ces formations en présentiel ou en distanciel, afin de répondre aux besoins et aux contraintes de chaque individu."},
+        ],
         contents: [
             {
                 id: "1",
@@ -79,6 +83,10 @@ export const services = [
         linkText: "Formation pour entreprises",
         image: "/images/financements/logo-compte-professionnel-formation-cpf.jpg",
         introduction: "L'investissement dans la formation et le développement professionnel des employés peut offrir de nombreux avantages aux entreprises. La formation aide les entreprises à se développer et à prospérer. Dans un monde du travail en constante évolution, il est important pour les entreprises de maintenir leur pertinence en veillant à ce que leurs employés disposent des compétences nécessaires pour réussir.",
+        serviceCard: [
+            {id: "1", contenu: "Notre centre de formation propose une large gamme de formations pour répondre aux besoins des entreprises de toutes tailles et de tous secteurs d’activité. Nous offrons des programmes de formation adaptés aux besoins spécifiques de chaque entreprise, avec des formations en présentiel dans nos locaux, en intra-entreprise ou en distanciel. "},
+            {id: "2", contenu: "Nous disposons d'une équipe de formateurs expérimentés et qualifiés qui travaillent en étroite collaboration avec les entreprises pour concevoir des programmes de formation sur mesure."},
+        ],
         contents: [
             {
                 id: "1",
@@ -134,6 +142,12 @@ export const services = [
         linkText: "Formation pour associations",
         image: "/images/financements/logo-OPCO.jpg",
         introduction: "La formation par le biais des associations d'insertion à l'emploi peut être bénéfique pour l'accompagnement des personnes en situation précaire et pour leur insertion sociale et professionnelle.",
+        serviceCard: [
+            {id: "1", contenu: "En tant que prestataire de services pour les associations, notre centre de formation propose une large gamme de solutions pour répondre à leurs besoins spécifiques en matière de formation, de développement de compétences et de renforcement de capacités. "},
+            {id: "2", contenu: "Nous sommes convaincus que les associations jouent un rôle important dans notre société et qu'il est essentiel de les aider à renforcer leurs compétences et à améliorer leur efficacité."},
+            {id: "3", contenu: "Nous sommes en mesure de proposer des formations en présentiel dans nos locaux, dans les locaux des associations ou en distanciel, en fonction des besoins de chaque association. "},
+            {id: "4", contenu: "Nous avons une équipe de formateurs qualifiés et expérimentés qui travaillent en étroite collaboration avec les associations pour concevoir des programmes de formation sur mesure. Nous sommes fiers de notre capacité à aider les associations à atteindre leurs objectifs et à améliorer leur impact dans la société."},
+        ],
         contents: [
             {
                 id: "1",

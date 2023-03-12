@@ -2,37 +2,10 @@ import React, {useState, useRef} from 'react'
 import Image from 'next/image'
 import axios from 'axios'
 import {BsTelephoneInbound, BsCheck2, BsInfoCircleFill} from 'react-icons/bs'
+import SelectForm from './SelectForm'
 
 import dynamic from 'next/dynamic'
-const Select = dynamic(() => {return import ('react-select')}, {ssr: false});
 const InputMask = dynamic(() => {return import ('react-input-mask-next')}, {ssr: false});
-
-const options = [
-    { value: '1', label: 'Formations bureautique'},
-    { value: '2', label: 'Formations outil collaboratif'},
-    { value: '3', label: 'Formation Web'},
-    { value: '4', label: 'Je ne sais pas encore'}
-]
-
-const colorStyles = {
-    control: (styles, state) => (
-        {...styles, backgroundColor: '#f3f4f6', color:'#014271', padding: '4px 5px', borderRadius: '0.5rem', fontSize:'14px', 
-        '&:hover': { borderColor: '#12532d' }, // border style on hover
-        border: '1px solid lightgray', // default border color
-        boxShadow: 'none', // no box-shadow
-        }
-    ),
-    options: (styles, state) => (
-        {...styles, color: '#014271',
-        color: state.isSelected ? "#FFF" : styles.color,
-        backgroundColor: state.isSelected ? "#FFF" : "red",
-        }
-    ), 
-    placeholder: (styles, state) => (
-        {...styles, color: '#014271'}
-    ),
-    
-}
 
 
 export default function SectionRappel() {
@@ -190,20 +163,7 @@ export default function SectionRappel() {
                                 })}
                                 onChange={handleChangeSelect}
                                 /> */}
-                                <Select
-                                    className="basic-single"
-                                    classNamePrefix="select"
-                                    placeholder="Votre projet de formation?"
-                                    isDisabled={false}
-                                    isLoading={false}
-                                    isClearable={true}
-                                    isRtl={false}
-                                    isSearchable={false}
-                                    name="color"
-                                    options={options}
-                                    styles={colorStyles}
-                                    onChange={handleChangeSelect}
-                                />
+                                <SelectForm handleChangeSelect={handleChangeSelect} />
                             </form>
                         </div>
                         ) : (

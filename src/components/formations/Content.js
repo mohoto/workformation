@@ -49,7 +49,7 @@ export default function Content({formations, categories, categorie}) {
                                         <h3 className="text-xl font-semibold">{formation.title}</h3>
                                     )}
                                 </div>
-                                <p className="mt-4 text-sm font-light">{formation.resume}</p>
+                                <p className="mt-4">{formation.resume}</p>
                             </div>
                             <div className="mt-4 text-sm">
                             <div className="flex">

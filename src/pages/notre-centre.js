@@ -24,7 +24,7 @@ export default function NotreCentte(){
                     <div>
                         <div className="flex flex-col justify-center mt-8 md:mt-20 md:flex-row md:items-center">
                             <div className="flex justify-center flex-1 mb-6 md:mb-0">
-                                <div className="relative overflow-hidden rounded-lg w-80 h-80">
+                                <div className="relative overflow-hidden rounded-lg w-96 h-96">
                                     <Image 
                                     src="/images/local/work-formation-devanture.jpg"
                                     fill
@@ -35,14 +35,14 @@ export default function NotreCentte(){
                             </div>
                             <div className="flex-1">
                                 <h2 className="mb-4 text-xl font-semibold text-second-50">Présentation de notre organisme</h2>
-                                <p className="mb-3 md:text-justify">WORK FORMATION est un organisme de formation professionnelle qui a pour objectif d'aider les personnes à développer leurs compétences professionnelles ou à se spécialiser dans un emploi qui correspond à leurs aspirations. Nous proposons une large gamme de formations, allant des formations orientées métier aux formations visant à développer les compétences professionnelles.</p>
+                                <p className="mb-3 md:text-justify"><span className="font-semibold">WORK FORMATION</span> est un organisme de formation professionnelle qui a pour objectif d'aider les personnes à développer leurs compétences professionnelles ou à se spécialiser dans un emploi qui correspond à leurs aspirations. Nous proposons une large gamme de formations, allant des formations orientées métier aux formations visant à développer les compétences professionnelles.</p>
                                 <p className="mb-3 md:text-justify">Les formations sont conçues pour répondre aux besoins des employeurs et des salariés, en termes de compétences et de connaissances.</p>
-                                <p className="md:text-justify">Chacune de nos formations est conçue pour être pratique et applicable, de manière à ce que les étudiants puissent mettre en pratique ce qu'ils ont appris dans leur travail quotidien.</p>
+                                <p className="md:text-justify">Chacune de nos formations est conçue pour être pratique et applicable, de manière à ce que les apprenants puissent mettre en pratique ce qu'ils ont appris dans leur travail quotidien.</p>
                             </div>
                         </div>
                         <div className="flex flex-col mt-20 md:flex-row md:items-center">
                             <div className="flex-1 mb-4 md:order-2 md:mb-0">
-                                <div className="relative w-full overflow-hidden md:h-80 h-60">
+                                <div className="relative w-full overflow-hidden md:h-96 h-60">
                                     <Image 
                                     src="/images/local/work-formation-formations-competences.png"
                                     fill
@@ -60,7 +60,7 @@ export default function NotreCentte(){
                         </div>
                         <div className="flex flex-col mt-20 md:flex-row md:items-center">
                             <div className="flex-1 mb-4 md:mb-0">
-                                <div className="relative w-full overflow-hidden md:h-80 h-60">
+                                <div className="relative w-full overflow-hidden md:h-96 h-60">
                                     <Image 
                                     src="/images/local/work-formation-foramtions-metiers.png"
                                     fill
@@ -78,7 +78,7 @@ export default function NotreCentte(){
                         </div>
                         <div className="flex flex-col mt-20 md:flex-row md:items-center">
                             <div className="flex-1 mb-6 md:order-2 md:mb-0">
-                                <div className="relative w-full overflow-hidden md:h-80 h-60">
+                                <div className="relative w-full overflow-hidden md:h-96 h-60">
                                     <Image 
                                     src="/images/local/work-formation-formateur.png"
                                     fill
@@ -95,7 +95,7 @@ export default function NotreCentte(){
                         </div>
                         <div className="flex flex-col mt-20 md:flex-row md:items-center">
                             <div className="flex-1 mb-6 md:mb-0">
-                                <div className="relative w-full overflow-hidden md:h-80 h-60">
+                                <div className="relative w-full overflow-hidden md:h-96 h-60">
                                     <Image 
                                     src="/images/local/work-formation-equipements.png"
                                     fill
