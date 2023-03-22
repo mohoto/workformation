@@ -59,14 +59,15 @@ export default function RappelSidebar() {
             },2000)
             return;
         }
+        setFormState(true);
+        setBtnDiseabled(true);
+        setSpinner(true);
         try {
             const {data} = await axios.post('/api/rappel', values)
-            setFormState(true);
-        setSpinner(true);
-        setTimeout(() => {
-            setSpinner(false);
-            setSucessMessage(true);
-        },3000);
+            setTimeout(() => {
+                setSpinner(false);
+                setSucessMessage(true);
+            },3000);
         } catch (error) {
             console.log(error)
         }
