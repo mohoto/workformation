@@ -11,7 +11,7 @@ const handleChange = (id) => {
         <h2>
             <button 
             type="button" 
-            className="flex items-center justify-between w-full p-4 text-lg font-semibold text-left bg-gray-100 border border-gray-100 hover:bg-gray-100 text-second-50 hover:text-bleue-karoy-100 focus:text-bleue-karoy-100"
+            className="flex items-center justify-between w-full p-4 text-lg font-semibold text-left bg-gray-100 border border-gray-100 hover:bg-gray-100 hover:text-second-50 text-bleue-karoy-100 focus:text-bleue-karoy-100"
             onClick={() => handleChange(id)}
             >
                 <span>{title}</span>
@@ -24,7 +24,7 @@ const handleChange = (id) => {
         </h2>
         {index === id && (
             <div>
-                <div className="p-5 px-10 font-light border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                <div className="p-5 px-10 font-light border border-gray-200">
                 {/* dangerouslySetInnerHTML={{ _html : content }} */}
                     <div className="flex flex-col space-y-6">
                     {accordionContent && accordionContent.map(contenu => (

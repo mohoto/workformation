@@ -48,7 +48,8 @@ module.exports = {
         }
       },
       boxShadow: {
-        karoy: '0 0 20px 3px rgb(0 0 0 / 5%)'
+        karoy: '0 0 20px 3px rgb(0 0 0 / 5%)',
+        icon: '0 10px 10px 0px rgba(167,174,189,0.4)'
       },
       fontFamily: {
         sans: ['var(--font-work)']
