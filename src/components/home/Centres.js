@@ -10,7 +10,7 @@ export default function Centres() {
         <section className="px-5 py-10 md:px-6 lg:px-12 xl:px-20 2xl:px-44 3xl:px-52">
             <div className="grid md:grid-cols-3 gap-x-10 gap-y-6">
                 <div className="px-10 py-5 space-y-2 font-light text-white rounded-lg bg-bleue-karoy-100">
-                    <p>Notre centre disposent d’espaces dédiés et de matériel pédagogique pour l’apprentissage théorique et pratique.</p>
+                    <p>Notre centre dispose d’espaces dédiés et de matériel pédagogique pour l’apprentissage théorique et pratique.</p>
                     <p>Situé à Paris, il est facilement accessible par les transports en commun ou en voiture.</p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-6 py-5 text-center text-white bg-second-50 rounded-xl">
