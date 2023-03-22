@@ -143,7 +143,7 @@ export default function RappelSidebar() {
                             </div>
                             <div className="mt-6 text-center">
                                 <button 
-                                className={`text-white rounded-2xl bg-second-50 hover:bg-white focus:bg-white hover:text-bleue-karoy-100 focus:text-bleue-karoy-100 p-3 ${formState ? 'focus:bg-white' : 'focus:bg-bleue-karoy-100'}`}
+                                className={`text-white rounded-2xl hover:bg-white focus:bg-white hover:text-bleue-karoy-100  focus:text-bleue-karoy-100 p-3 ${formState ? 'bg-bleue-karoy-100' : 'bg-second-50'}`}
                                 onClick={submitForm}
                                 disabled={btnDiseabled}
                                 >

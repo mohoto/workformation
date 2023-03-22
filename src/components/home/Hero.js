@@ -35,7 +35,7 @@ export default function Hero() {
                 </div> */} 
                 <div className="absolute top-0 left-0 right-0 flex items-center justify-center h-full">
                     <div>
-                        <h1 className="text-3xl font-bold !leading-snug text-center text-white md:text-4xl lg:text-5xl xl:text-6xl">Développez<br/>vos compétences<br/>professionnelles</h1>
+                        <h1 className="mt-20 lg:mt-0 text-3xl font-bold !leading-snug text-center text-white md:text-4xl lg:text-5xl xl:text-6xl">Développez<br/>vos compétences<br/>professionnelles</h1>
                         <p className="px-2 py-2 mt-8 text-sm font-semibold text-center text-white lg:px-6 lg:py-4 md:text-md lg:text-lg xl:text-2xl">FORMATIONS PROFESSIONNELLES POUR ADULTES</p>
                     </div>
                 </div>             

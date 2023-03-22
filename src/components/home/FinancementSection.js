@@ -12,7 +12,7 @@ export default function FinancementSection() {
                 </div>
             </div>
             <div className="md:px-20 lg:px:32 xl:px-52">
-                <p className="mt-4 text-center lg:text-lg md:p-6">Vous êtes salarié, auto-entrepreneur ou en recherche d'empoi. <span className="font-semibold">Vous pouvez bénéficier d'un financement partiel ou jusqu’à 100%</span> pour votre projet de formation. Ces solutions de financements dépendent de votre situation et vous pouvez être éligible à un ou plusieurs de ces dispositifs.</p>
+                <p className="mt-4 text-center lg:text-lg md:p-6">Vous êtes salarié, auto-entrepreneur ou en recherche d'empoi. <span className="font-semibold">Vous pouvez bénéficier d'un financement partiel ou jusqu’à 100%</span> pour votre projet de formation. Ces solutions de financements dépendent de votre situation. Vous pouvez être éligible à un ou plusieurs de ces dispositifs.</p>
             </div>
             <div className="grid items-center mt-10 md:mt-20 gap-x-8 lg:grid-cols-2">
                 <div className="flex">

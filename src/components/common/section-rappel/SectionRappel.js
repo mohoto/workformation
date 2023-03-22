@@ -65,6 +65,7 @@ export default function SectionRappel() {
         try {
             const {data} = await axios.post('/api/rappel', values)
             setFormState(true);
+            setBtnDiseabled(true);
             setSpinner(true);
             setTimeout(() => {
                 setSpinner(false);
@@ -170,7 +171,7 @@ export default function SectionRappel() {
                         </div>
                         <div className="mt-6 text-center">
                             <button 
-                            className={`text-white rounded-2xl bg-second-50 hover:bg-bleue-karoy-100 focus:bg-bleue-karoy-100 p-3 ${formState ? 'focus:bg-white' : 'focus:bg-bleue-karoy-100'}`}
+                            className={`text-white rounded-2xl bg-second-50 hover:bg-bleue-karoy-100 focus:bg-bleue-karoy-100 p-3 ${formState ? 'bg-white' : 'bg-second-50'}`}
                             onClick={submitForm}
                             disabled={btnDiseabled}
                             >
@@ -196,7 +197,7 @@ export default function SectionRappel() {
                             </div>
                             <div className="mt-6">
                                 <h4 className="text-2xl font-semibold tracking-wide text-center">Votre demande a été enregistré</h4>
-                                <p className="mt-4 text-xl tracking-wide text-center">Un de nos conseiller vous rappelera dans les plus brefs délais.</p>
+                                <p className="mt-10 text-xl tracking-wide text-center">Un de nos conseiller vous rappelera dans les plus brefs délais.</p>
                             </div>
                         </div>
                         )}

@@ -33,7 +33,7 @@ export default function SectionFormationTwo() {
                         </div>
                         <div className="ml-4">
                             <h3 className="mb-1 font-semibold">Débutant, intermédiaire et avancé</h3>
-                            <p className="text-sm">Adaptés aux débutants et aux personnes souhaitant approfondir leurs connaissances de base, jusqu'aux fonctionnalités les plus avancées.</p>
+                            <p className="text-sm">Adaptées aux débutants et aux personnes souhaitant approfondir leurs connaissances de base, jusqu'aux fonctionnalités les plus avancées.</p>
                         </div>
                     </div>
                     <div className="flex">
