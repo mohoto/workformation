@@ -70,7 +70,7 @@ export default function SectionRappel() {
             setTimeout(() => {
                 setSpinner(false);
                 setSucessMessage(true);
-            },3000);
+            },2000);
         } catch (error) {
             console.log(error)
         } 
