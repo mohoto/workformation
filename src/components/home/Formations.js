@@ -72,7 +72,7 @@ export default function Formations({selectedFormations}) {
                             </table>
                             <div className="flex justify-center">
                                 <Link href={`/formations/${formation.categorieSlug}/${formation.slug}`}>
-                                    <h3 className="px-4 py-2 mx-auto mt-6 text-white transition duration-200 ease-in-out rounded-full bg-second-50 hover:bg-bleue-karoy-100">Voir la formation</h3>
+                                    <h3 className="px-4 py-2 mx-auto mt-6 text-white transition duration-200 ease-in-out rounded-full bg-second-50 hover:bg-bleue-karoy-100" aria-label={`voir la formation ${formation.title}`}>Voir la formation</h3>
                                 </Link>
                             </div>
                         </div>

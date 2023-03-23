@@ -39,6 +39,7 @@ export default function SelectForm({handleChangeSelect}) {
     className="basic-single"
     classNamePrefix="select"
     placeholder="Votre projet de formation?"
+    aria-label="sélectionnez votre votre projet de formation"
     isDisabled={false}
     isLoading={false}
     isClearable={true}

@@ -28,6 +28,7 @@ export default function Hero() {
                 fill
                 className="object-cover object-bottom mix-blend-overlay"
                 alt="Bannière Work Formation"
+                priority
                 />
                 {/* <div className="absolute flex flex-col px-4 md:w-3/4 lg:w-3/4 xl:w-3/4 2xl:w-1/2 3xl:w-1/2 top-36 md:top-52 md:left-20 lg:top-48 lg:left-40 xl:top-80 2xl:top-96 2xl:left-72"> 
                     <h1 className="text-xl font-bold leading-snug text-white md:text-3xl lg:text-4xl xl:text-5xl">Développez vos compétences<br/>professionnelles</h1>

@@ -115,6 +115,7 @@ export default function SectionRappel() {
                                 name="nom" 
                                 value={nom}
                                 placeholder="Votre nom"
+                                aria-label="Entrez votre nom"
                                 className="block w-full px-4 py-3 text-sm bg-gray-100 border rounded-lg outline-none placeholder-bleue-karoy-100 focus:border-green-900"
                                 onChange={handleChange}
                                 />
@@ -123,7 +124,8 @@ export default function SectionRappel() {
                                 id="prenom"
                                 name="prenom" 
                                 value={prenom}
-                                placeholder="Votre prenom"
+                                placeholder="Votre prénom"
+                                aria-label="Entrez votre prénom"
                                 className="block w-full px-4 py-3 text-sm bg-gray-100 border rounded-lg outline-none placeholder-bleue-karoy-100 focus:border-green-900" 
                                 onChange={handleChange}
                                 />
@@ -131,7 +133,8 @@ export default function SectionRappel() {
                                 type="email" 
                                 name="email"
                                 value={values.email} 
-                                placeholder="Votre email" 
+                                placeholder="Votre email"
+                                aria-label="Entrez votre e-mail" 
                                 className="block w-full px-4 py-3 text-sm bg-gray-100 border rounded-lg outline-none placeholder-bleue-karoy-100 focus:border-green-900" 
                                 onChange={handleChange}
                                 />
@@ -142,6 +145,7 @@ export default function SectionRappel() {
                                 name="phoneNumber" 
                                 value={phoneNumber}
                                 placeholder="Votre numero de mobile"
+                                aria-label="Entrez votre numéro de telephone"
                                 className="block w-full px-4 py-3 text-sm bg-gray-100 border rounded-lg outline-none placeholder-bleue-karoy-100 focus:border-green-900" 
                                 onChange={handleChange}
                                 />

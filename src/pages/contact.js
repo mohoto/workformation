@@ -125,6 +125,7 @@ export default function Contact() {
                             name="nom"
                             value={values.nom} 
                             placeholder="Nom et prénom" 
+                            aria-label="Entrez votre nom et prénom"
                             className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
                             onChange={handleChange}
                             />
@@ -134,7 +135,8 @@ export default function Contact() {
                             type="email" 
                             name="email"
                             value={values.email} 
-                            placeholder="Vore email" 
+                            placeholder="Vore email"
+                            aria-label="Entrez votre email" 
                             className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
                             onChange={handleChange}
                             />
@@ -145,6 +147,7 @@ export default function Contact() {
                             name="phoneNumber" 
                             value={values.phoneNumber} 
                             placeholder="Numero de telephone(facultatif)"
+                            aria-label="Entrez votre numéro de teléphone, ceci est facultatif"
                             className="block px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none" 
                             onChange={handleChange}
                             /> 
@@ -155,6 +158,7 @@ export default function Contact() {
                             name="message"
                             value={values.message}  
                             placeholder="Votre message" 
+                            aria-label="Entrez votre message"
                             className="px-3 py-3 mt-2 bg-white border border-gray-400 rounded-lg text-bleue-karoy-100 w-100 dark:bg-gray-800 dark:border-gray-700 focus:border-second-50 focus:outline-none"
                             onChange={handleChange}
                             >
