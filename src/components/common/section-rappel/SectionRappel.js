@@ -200,8 +200,8 @@ export default function SectionRappel() {
                                 <svg className="w-16 h-16 fill-current text-second-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>
                             </div>
                             <div className="mt-6">
-                                <h4 className="text-2xl font-semibold tracking-wide text-center">Votre demande a été enregistré</h4>
-                                <p className="mt-10 text-xl tracking-wide text-center">Un de nos conseiller vous rappelera dans les plus brefs délais.</p>
+                                <h4 className="text-2xl font-semibold tracking-wide text-center">Votre demande a été enregistrée</h4>
+                                <p className="mt-10 text-xl tracking-wide text-center">Un de nos conseillers vous rappelera dans les plus brefs délais.</p>
                             </div>
                         </div>
                         )}
