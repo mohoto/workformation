@@ -13,7 +13,8 @@ export default function NotreCentte(){
                 <meta name="description" content="Notre organisme de formation s'engage à fournir une formation de qualité, en veillant à ce que les formateurs soient qualifiés et expérimentés dans leur domaine." />
                 <meta property="og-title" content="Notre centre de formation" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-work-formation-32x32.png" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-work-formation-16x16.png" />
             </Head>
             <main>
                 <div className="px-6 pb-20 mt-20 lg:px-12 xl:px-36 2xl:px-64 3xl:px-64">
