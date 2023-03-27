@@ -628,7 +628,7 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "TINTRODUCTION À MICROSOFT EXCEL 2021",
+            title: "INTRODUCTION À MICROSOFT EXCEL 2021",
             lists: [
               {id: "1", content:"Présentation du logiciel et de son interface utilisateur"},
               {id: "2", content:"Naviguer dans les feuilles de calcul"},
