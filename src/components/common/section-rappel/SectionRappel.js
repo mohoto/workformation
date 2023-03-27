@@ -98,7 +98,7 @@ export default function SectionRappel() {
                     <div>
                         <div className={`transition duration-100 ease-out ${formState && 'transform scale-0'}`}>
                             <div>
-                                <p className="mb-2 font-semibold tracking-wide text-center">Demandez à être rappelé par un de nos conseillers.</p>
+                                <p className="mb-2 font-semibold tracking-wide text-center">Demandez à être appelé par un de nos conseillers.</p>
                             </div>
                             {errorMessage &&
                                 <div className="flex items-center px-4 py-3 text-sm text-white bg-red-600 rounded-md" role="alert">
