@@ -1478,7 +1478,7 @@ export const formations = [
             id:"1",
             title: "",
             lists: [
-              {id: "1", content:"Permettre aux participants de comprendre comment utiliser Google Workspace pour la gestion des emails, la collaboration en ligne et la gestion de fichiers, et de les aider à être plus efficaces dans leur travail quotidien."}
+              {id: "1", content:"Permettre aux participants de comprendre comment utiliser Google Workspace pour la gestion des emails, la collaboration en ligne et la gestion de fichiers, et de les aider à être plus efficaces dans leur travail quotidien"}
             ]
           }
         ]
