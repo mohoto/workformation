@@ -24,7 +24,7 @@ export default function SectionFormationTwo() {
                         </div>
                         <div className="ml-4">
                         <h3 className="mb-1 font-semibold">Des formations courtes</h3>
-                            <p className="text-sm">Ces formations "qui vont droit à l'essentiel" permettent d'acquérir en quelques heures une utilisation efficace de ces logiciels.</p>
+                            <p className="text-sm">Ces formations "qui vont droit à l'essentiel" permettent d'acquérir en quelques heures une utilisation efficace des logiciels.</p>
                         </div>
                     </div>
                     <div className="flex">
@@ -52,7 +52,7 @@ export default function SectionFormationTwo() {
                         <div className="ml-4">
                         <h3 className="mb-1 font-semibold">Attestation de réussite</h3>
                             {/* <p className="text-sm">Cette certification valorise vos compétences en bureautique. Idéal, pour une recherche d’emploi ou pour promouvoir vos aptitudes au sein de votre entreprise.</p> */}
-                            <p className="text-sm">Cette attestation valorise vos compétences en bureautique. Idéal, pour une recherche d’emploi ou pour promouvoir vos aptitudes au sein de votre entreprise.</p>
+                            <p className="text-sm">Cette attestation reconnait vos compétences en bureautique. A faire valoir lors de votre recherche d’emploi ou pour promouvoir vos compétences au sein de votre entreprise.</p>
                         </div>
                     </div>
                 </div>

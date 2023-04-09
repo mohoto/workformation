@@ -24,11 +24,11 @@ export default function Footer() {
                 <div>
                     <h5 className="text-xl font-bold md:text-lg">LIENS RAPIDES</h5>
                     <div className="flex flex-col mt-6 space-y-2 text-lg md:text-base">
-                        <Link href="/formations">Nos fromations</Link>
-                        <Link href="/financement/financement-pole-emploi">financement Pôle emploi</Link>
-                        <Link href="/financement/financement-cpf">financement CPF</Link>
-                        <Link href="/financement/financement-agephip">financement AGEPHIP</Link>
-                        <Link href="/financement/financement-opco">financement OPCO</Link>
+                        <Link href="/formations">Nos formations</Link>
+                        <Link href="/financement/financement-pole-emploi">Financement Pôle emploi</Link>
+                        <Link href="/financement/financement-cpf">Financement CPF</Link>
+                        <Link href="/financement/financement-agephip">Financement AGEPHIP</Link>
+                        <Link href="/financement/financement-opco">Financement OPCO</Link>
                         <Link href="/contact">Contact</Link>
                     </div>
                 </div>

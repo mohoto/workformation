@@ -27,7 +27,7 @@ export default function Formations({selectedFormations}) {
                 </div>
             </div>
             <div className="md:px-20 lg:px:32 xl:px-52">
-                <p className="mt-4 text-center text-gray-100 lg:text-lg md:p-6">La formation professionnelle est la clé pour s’insérer rapidement et durablement dans le monde du travail. Que ce soit pour l’apprentissage d’un nouveau métier ou pour développer vos savoirs-faire, notre centre propose des <span className="font-semibold text-white">formations orientées pour l’emploi</span>.</p>
+                <p className="mt-4 text-center text-gray-100 lg:text-lg md:p-6">La formation professionnelle est la clé de l’insertion rapide et durable dans le monde du travail. Vous souhaitez apprendre un nouveau métier ou tout simplement développer vos connaissances et compétences, notre centre propose  <span className="font-semibold text-white">formations orientées pour l’emploi</span>.</p>
             </div>
             <div className="grid mt-20 gap-x-10 gap-y-20 md:grid-cols-2 lg:grid-cols-3">
                 {selectedFormations && selectedFormations.filter(formation => formation.id === "1" || formation.id === "9" || formation.id === "11").map(formation => (

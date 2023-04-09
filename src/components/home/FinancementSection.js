@@ -12,7 +12,7 @@ export default function FinancementSection() {
                 </div>
             </div>
             <div className="md:px-20 lg:px:32 xl:px-52">
-                <p className="mt-4 text-center lg:text-lg md:p-6">Vous êtes salarié, auto-entrepreneur ou en recherche d'empoi. <span className="font-semibold">Vous pouvez bénéficier d'un financement partiel ou jusqu’à 100%</span> pour votre projet de formation. Ces solutions de financements dépendent de votre situation. Vous pouvez être éligible à un ou plusieurs de ces dispositifs.</p>
+                <p className="mt-4 text-center lg:text-lg md:p-6">Vous êtes salarié, auto-entrepreneur ou en recherche d'emploi. <span className="font-semibold">Vous pouvez bénéficier d'un financement partiel ou jusqu’à 100%</span> pour votre projet de formation. Ces solutions de financements dépendent de votre situation. Vous pouvez être éligible à un ou plusieurs de ces dispositifs.</p>
             </div>
             <div className="grid items-center mt-10 md:mt-20 gap-x-8 lg:grid-cols-2">
                 <div className="flex">
@@ -29,9 +29,10 @@ export default function FinancementSection() {
                 lg:before:border-t-[40px] lg:before:border-t-transparent lg:before:border-l-[0] lg:before:border-b-transparent lg:before:border-r-second-50 lg:before:-t-[0] lg:before:ml-[-40px] lg:before:bottom-[50%] lg:before:left-[0]">
                     <div className="flex flex-col justify-center h-full p-6 md:px-8">
                         <div className="text-white">
-                            <h4 className="mb-4 text-lg font-semibold">Notre centre vous accompagne pour faciliter vos démarches et obtenir les subventions auxquelles vous pouvez prétendre.</h4>
+                            <h4 className="mb-4 text-lg font-semibold">Notre centre vous accompagne pour faciliter vos démarches et obtenir les financements auxquelles vous pouvez prétendre.</h4>
                             <p className="mb-2 font-light text-white">Le coût d’une formation peut être un frein pour l’évolution de vos compétences ou pour franchir le pas d’une reconversion professionnelle.</p>
-                            <p className="font-light text-white">Plusieurs dispositifs existent pour vous soutenir financièrement et différentes aides peuvent être mobilisées pour financer votre parcours de formation.</p>
+                            <p className="mb-2 font-light text-white">Plusieurs dispositifs existent pour vous soutenir financièrement et différentes aides peuvent être mobilisées pour financer votre parcours de formation.</p>
+                            <p className="font-semibold text-white">Vous avez un projet de formation ? N’hésitez pas à nous en parler. Nous trouverons ensemble le financement le plus adapté</p>
                         </div>
                     </div>
                     <div className="absolute top-0 -translate-x-1/2 md:-translate-y-1/2 md:left-0 md:transform md:top-1/2 left-1/2">

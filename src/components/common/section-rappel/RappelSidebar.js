@@ -87,7 +87,7 @@ export default function RappelSidebar() {
                 </div>
                 {!formState && (
                 <div className="flex flex-col items-center justify-center pb-4">
-                    <h3 className="w-full py-3 text-center text-gray-100">Besoin d'un conseil sur le choix de votre formation ou sur les financements dont vous pouvez bénéficier?</h3>
+                    <h3 className="w-full py-3 text-center text-gray-100">Besoin d'un conseil sur le choix de votre formation ou sur les financements dont vous pourriez bénéficier?</h3>
                     <div className={`relative transition duration-100 ease-out ${formState && 'transform scale-1'}`}>
                         <div>
                             <div className={`transition duration-100 ease-out ${formState && 'transform scale-0'}`}>

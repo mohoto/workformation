@@ -12,7 +12,7 @@ export const formations = [
       admission: "Tout public",
       evaluation: "Test QCM",
       certification: "Attestation de réussite",
-      resume: "La formation sur Microsoft Word 2021 initiale destinée aux débutants vise à aider les participants à maîtriser les fonctionnalités de base de ce logiciel de traitement de textes populaire.",
+      resume: "La formation sur Microsoft Word 2021 initiale est destinée aux débutants, elle vise à aider les participants à maîtriser les fonctionnalités de base de ce logiciel de traitement de textes populaire.",
       image: "/images/formations/bureautique/formation-word-debutant.jpg",
       descriptions: [
         {id: "1", fontWeight: "font-semibold", content: "La formation sur Microsoft Word 2021 pour les débutants est un moyen efficace pour maîtriser les fonctionnalités de base de ce logiciel de traitement de textes populaire."},
@@ -206,10 +206,10 @@ export const formations = [
     admission: "Tout public",
     evaluation: "Test QCM",
     certification: "Attestation de réussite",
-    resume: "La formation Microsoft Word 2021 intermédiaire est conçue pour les utilisateurs qui ont déjà une connaissance de base de l'outil de traitement de texte afin d'utiliser des fonctionnalités avancés.",
+    resume: "La formation Microsoft Word 2021 intermédiaire est destinée aux utilisateurs qui ont déjà une connaissance de base de l'outil de traitement de texte afin d'utiliser des fonctionnalités avancés.",
     image: "/images/formations/bureautique/formation-word-intermediaire.jpg",
     descriptions: [
-      {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Word 2021 intermédiaire est conçue pour les utilisateurs qui ont déjà une certaine connaissance de base de l'outil de traitement de texte. La formation Word 2021 intermédiaire aidera les participants à améliorer la qualité et la productivité de leurs documents en utilisant les fonctionnalités avancées de Word 2021."},
+      {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Word 2021 intermédiaire est destinée aux les utilisateurs qui ont déjà une certaine connaissance de base de l'outil de traitement de texte. La formation Word 2021 intermédiaire aidera les participants à améliorer la qualité et la productivité de leurs documents en utilisant les fonctionnalités avancées de Word 2021."},
       {id: "2", fontWeight: "font-normal", content: "Elle vise à développer les compétences des participants dans les fonctionnalités avancées de Word 2021, telles que la gestion de sections et de colonnes, la création et la modification de tableaux de données, l'utilisation d'objets Word, la personnalisation de styles et de modèles, la création de macros et la personnalisation d'outils de collaboration."},
       {id: "3", fontWeight: "font-normal", content: "Le formateur expérimenté guidera les participants à chaque étape pour les aider à comprendre les concepts clés et à les mettre en pratique. Les participants auront également accès à des supports de formation pour les aider à se rappeler les concepts clés après la formation."}
     ],
@@ -599,7 +599,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "La formation Microsoft Excel 2021 pour les débutants est une occasion idéale pour les personnes qui souhaitent maîtriser les bases du logiciel de feuilles de calcul.",
+  resume: "La formation Microsoft Excel 2021 pour les débutants est destinée aux personnes qui souhaitent maîtriser les bases du logiciel de feuilles de calcul.",
   image: "/images/formations/bureautique/formation-excel-debutant.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Excel 2021 pour les débutants est une occasion idéale pour les personnes qui souhaitent maîtriser les bases du logiciel de feuilles de calcul. Ce programme est conçu pour être accessible à tous, sans prérequis technique particulier."},
@@ -763,7 +763,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "Cette formation est destinée aux personnes ayant déjà une certaine expérience avec Microsoft Excel et souhaitant améliorer leurs compétences sur ce logiciel de feuilles de calcul..",
+  resume: "La formation Microsoft EXCEL 2021 Intermédiaire est destinée aux personnes ayant déjà une certaine expérience avec Microsoft Excel et souhaitant améliorer leurs compétences sur ce logiciel de feuilles de calcul..",
   image: "/images/formations/bureautique/formation-excel-intermediaire.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Excel 2021 pour les niveaux intermédiaires est destiné aux utilisateurs ayant une connaissance de base d'Excel et souhaitant élargir leurs compétences. Elle est conçue pour développer leur expertise sur ce logiciel."},
@@ -927,7 +927,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "Cette formation est destinée aux utilisateurs ayant une connaissance intermédiaire à avancée d'Excel et souhaitant élargir leurs compétences pour gérer et analyser des données complexes.",
+  resume: "La formation Microsoft EXCEL 2021 Avancé est destinée aux utilisateurs ayant une connaissance intermédiaire à avancée d'Excel et souhaitant élargir leurs compétences pour gérer et analyser des données complexes.",
   image: "/images/formations/bureautique/formation-excel-avance.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "Le logiciel Microsoft Excel est un outil incontournable pour les professionnels travaillant avec des données complexes. La formation Microsoft Excel 2021 avancé est destinée aux utilisateurs qui souhaitent améliorer leur connaissance du logiciel et apprendre à utiliser ses fonctionnalités les plus avancées. Les participants qui terminent cette formation seront en mesure de créer des solutions de feuilles de calcul plus efficaces pour leur entreprise."},
@@ -1089,7 +1089,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "La formation Microsoft PowerPoint s'adresse aussi bien aux débutants qu'à ceux souhaitant améliorer leurs compétences, en leur enseignant les fondamentaux pour créer des présentations professionnelles.",
+  resume: "La formation Microsoft PowerPoint est destinée aussi bien aux débutants qu'à ceux souhaitant améliorer leurs compétences, en leur enseignant les fondamentaux pour créer des présentations professionnelles.",
   image: "/images/formations/bureautique/formation-powerpoint-2.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft PowerPoint est conçue pour aider les utilisateurs à acquérir les compétences nécessaires pour créer des présentations professionnelles et attrayantes. Cette formation est destinée aux débutants et à tous ceux qui souhaitent améliorer leur compétence en création de présentation."},
@@ -1460,7 +1460,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "Cette formation destinée aux utilisateurs débutants de Google Workspace souhaitant découvrir les différentes applications et fonctionnalités incluses dans cet outil collaboratif.",
+  resume: "La formation GOOGLE Workspace Débutant est destinée aux utilisateurs débutants de Google Workspace souhaitant découvrir les différentes applications et fonctionnalités incluses dans cet outil collaboratif.",
   image: "/images/formations/outil-collaboratif/formation-google-workspace.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation sur Google Workspace est une opportunité pour les personnes qui souhaitent améliorer leur productivité au travail. Cette formation offre un aperçu complet de la suite bureautique en ligne de Google et permet aux participants de comprendre les différences entre Google Workspace et les autres suites bureautiques."},
@@ -1624,7 +1624,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "Cette formation destinée à toute personne, sans connaissance de base, pour créer un site web avec WordPress. Cette plateforme(CMS) permet de créer et de gérer efficacement le contenu de son site web.",
+  resume: "La formation Wordpress pour les débutants est destinée à toute personne, sans connaissance de base, pour créer un site web avec WordPress. Cette plateforme(CMS) permet de créer et de gérer efficacement le contenu de son site web.",
   image: "/images/formations/web/formation-wordpress-4.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Wordpress pour les débutants est conçue pour aider les personnes souhaitant créer un site web à comprendre les fondements de Wordpress."},
@@ -1834,7 +1834,7 @@ export const formations = [
   admission: "Tout public",
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
-  resume: "La formation Shopify pour les débutants est conçue pour les personnes souhaitant apprendre à créer et gérer un site e-commerce facilement, sans besoin de connaissance dans le développement web.",
+  resume: "La formation Shopify pour les débutants est destinée aux personnes souhaitant apprendre à créer et gérer un site e-commerce facilement, sans besoin de connaissance dans le développement web.",
   image: "/images/formations/web/formation-shopify.jpg",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Shopify pour les débutants est conçue pour aider les personnes qui souhaitent démarrer leur activité de commerce en ligne. "},

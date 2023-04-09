@@ -25,7 +25,7 @@ export default function Formations({formations, categories}) {
                         </div>
                     </div>
                     <div className="md:px-20 lg:px:32 xl:px-52">
-                        <p className="mt-4 text-center xl:text-lg md:p-6">La formation professionnelle, vous permet, tout au long de votre carrière d’acquérir les savoirs et compétences pour progresser en responsabilités au sein de votre entreprise ou d’organiser votre reconversion professionnelle. Nos formations sont accessibles à tous, que vous soyez salarié, indépendant ou demandeur d’emploi.</p>
+                        <p className="mt-4 text-center xl:text-lg md:p-6">La formation professionnelle, vous permet, tout au long de votre carrière d’acquérir les savoirs et compétences pour progresser en responsabilités au sein de votre entreprise ou d’organiser votre reconversion professionnelle. Nos formations sont accessibles à tous, que vous soyez un partculier salarié, indépendant ou demandeur d’emploi.</p>
                     </div>
                     <Content formations={formations} categories={categories} /> 
                 </div>

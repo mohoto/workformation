@@ -1,6 +1,6 @@
 const NavbarData = [
     {
-        title: 'ACCEUIL',
+        title: 'ACCUEIL',
         link: '/'
     },
     {
@@ -43,7 +43,7 @@ const NavbarData = [
                 link: '/financement/financement-opco'
             },
             {
-                title: 'AGEPHIP',
+                title: 'AGEFIPH',
                 link: '/financement/financement-agefiph' 
             },
             {

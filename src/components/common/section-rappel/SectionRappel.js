@@ -92,7 +92,7 @@ export default function SectionRappel() {
                     <BsInfoCircleFill size={45} className="absolute text-second-50 bottom-[10px] right-[-10px] bg-white rounded-full border-2 border-white" />
                 </div>
             </div>
-            <h3 className="w-full mt-4 mb-10 text-lg text-center text-white md:text-xl lg:text-2xl md:w-1/2 font-extralight">Besoin d'un conseil sur le choix de votre formation ou sur les financements dont vous pouvez bénéficier ?</h3>
+            <h3 className="w-full mt-4 mb-10 text-lg text-center text-white md:text-xl lg:text-2xl md:w-1/2 font-extralight">Besoin d'un conseil sur le choix de votre formation ou sur les financements dont vous pourriez bénéficier ?</h3>
             <div className="flex items-center justify-center">
                 <div className={`relative px-6 py-6 bg-white shadow-xl rounded-2xl max-w-[99%] md:max-w-[90%] transition duration-100 ease-out ${formState && 'transform scale-75'}`}>
                     <div>
