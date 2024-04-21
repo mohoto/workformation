@@ -2209,7 +2209,7 @@ export const formations = [
       } */
   ]
 },
-];
+]
 
 
 
