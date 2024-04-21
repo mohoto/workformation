@@ -168,7 +168,10 @@ export const formations = [
             accordionContent: [
               {
                 id:"1",
-                title: "KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, XXXXXXXX par mail : XXXXXXXXXXX@XXXXXXXX ou par téléphone : 06 XX XX XX XX pour connaître les modalités d’adaptation de la formation.",
+                title: "",
+                lists: [
+                  {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, XXXXXXXX par mail : XXXXXXXXXXX@XXXXXXXX ou par téléphone : 06 XX XX XX XX pour connaître les modalités d’adaptation de la formation."},
+                ]
               },
             ]
             
