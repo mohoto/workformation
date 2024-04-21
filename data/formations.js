@@ -2030,6 +2030,170 @@ export const formations = [
       } */
   ]
 },
+  {
+  id: "12",
+  title: "Formation LinkedIn",
+  slug: "formation-linkedin",
+  statut: "publié",
+  categorie: "reseaux-sociaux",
+  categorieSlug: "reseaux-sociaux",
+  categorieId: "4",
+  types: ["Présentiel", "Distanciel"],
+  admission: "Tout public",
+  evaluation: "Test QCM",
+  certification: "Attestation de réussite",
+  resume: "Développez votre présence sur LinkedIn et atteignez vos objectif avec un profil attractif, un réseau professionnel de qualité et du contenu pertinent.",
+  image: "/images/formations/bureautique/formation-excel-debutant.jpg",
+  descriptions: [
+    {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Excel 2021 pour les débutants est une occasion idéale pour les personnes qui souhaitent maîtriser les bases du logiciel de feuilles de calcul. Ce programme est conçu pour être accessible à tous, sans prérequis technique particulier."},
+    {id: "2", fontWeight: "font-normal", content: "Notre programme de formation couvre toutes les compétences nécessaires pour travailler efficacement avec Excel. Au cours de cette formation, les participants apprendront à utiliser des techniques avancées pour gérer et analyser les données, telles que les filtres et les requêtes. Ils découvriront également comment créer des tableaux croisés dynamiques et des pivot tables pour visualiser les données de manière cohérente, ainsi que des astuces pour automatiser les tâches en utilisant des macros."},
+    {id: "3", fontWeight: "font-normal", content: "Les formateurs expérimentés enseigneront les compétences de manière interactive et pratique, permettant aux participants de mettre en pratique les connaissances acquises dès le premier jour."}
+  ],
+  accordionData: [
+      {
+        id: "1",
+        title: "Objectifs de la formation",
+        accordionContent: [
+          {
+            id:"1",
+            title: "objectif",
+            lists: [
+              {id: "1", content:"Comprendre les bases de Microsoft Excel 2021"},
+              {id: "2", content:"Apprendre à utiliser les fonctions de base d'Excel pour travailler avec des feuilles de calcul"},
+              {id: "3", content:"Savoir créer et modifier des tableaux, des graphiques et des formules"}
+            ]
+          }
+        ]
+      },
+      {
+        id: "2",
+        title: "Programme de la formation",
+        accordionContent: [
+          {
+            id:"1",
+            title: "INTRODUCTION À MICROSOFT EXCEL 2021",
+            lists: [
+              {id: "1", content:"Présentation du logiciel et de son interface utilisateur"},
+              {id: "2", content:"Naviguer dans les feuilles de calcul"},
+              {id: "3", content:"Créer et enregistrer un nouveau classeur"}
+            
+            ]
+          },
+          {
+            id:"2",
+            title: "SAISIE ET FORMATAGE DE DONNÉES",
+            lists: [
+              {id: "1", content:"Saisir et modifier des données dans les cellules"},
+              {id: "2", content:"Utiliser les outils de formatage pour améliorer l'apparence des données"},
+              {id: "3", content:"Appliquer des styles et des thèmes pour une présentation cohérente"}
+            ]
+          },
+          {
+            id:"3",
+            title: "UTILISATION DES FORMULES ET DES FONCTIONS",
+            lists: [
+              {id: "1", content:"Comprendre comment utiliser les formules et les fonctions pour effectuer des calculs automatisés"},
+              {id: "2", content:"Apprendre les fonctions de base telles que SOMME, MOYENNE, MAX et MIN"},
+              {id: "3", content:"Créer et utiliser des formules complexes"}
+            ]
+          },
+          {
+            id:"4",
+            title: "CRÉATION DE TABLEAUX ET DE GRAPHIQUES",
+            lists: [
+              {id: "1", content:"Créer et personnaliser des tableaux pour organiser les données"},
+              {id: "2", content:"Insérer des graphiques pour représenter les données de manière visuelle"},
+              {id: "3", content:"Modifier et formater les graphiques pour une présentation claire"}
+            ]
+          },
+          {
+            id:"5",
+            title: "Astuces et fonctionnalités avancées",
+            lists: [
+              {id: "1", content:"Découvrir des astuces pour maximiser l'efficacité de Microsoft Excel 2021"},
+              {id: "2", content:"Utiliser des fonctionnalités avancées telles que les tableaux croisés dynamiques et les pivot tables"},
+              {id: "3", content:"Réviser les compétences acquises au cours de la formation."}
+            ]
+          },          
+        ]  
+      },
+      {
+        id: "3",
+        title: "Pré-requis pour la formation",
+        accordionContent: [
+          {
+            id:"1",
+            title: "",
+            lists: [
+              {id: "1", content:"Savoir utiliser les fonctions de base d'un ordinateur, comme la souris et le clavier."},
+            ]
+          }
+        ]
+      },
+      {
+        id: "4",
+        title: "Moyens pédagogiques",
+        accordionContent: [
+          {
+            id:"1",
+            title: "",
+            lists: [
+              {id: "1", content:"Support pédagogique remis à l’apprenant."},
+              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+            ]
+          }
+        ]
+      },
+      {
+        id: "5",
+        title: "Évaluation des résultats",
+        accordionContent: [
+          {
+            id:"1",
+            title: "",
+            lists: [
+              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
+              {id: "2", content:"Évaluation continue durant la session (QCM)."},
+              {id: "3", content:"Remise d’une attestation de fin de formation."},
+              {id: "4", content:"Remise d’une attestation de réussite."},
+            ]
+          }
+        ]
+        
+      }
+  ],
+  infosTypes: [
+      {
+        id: "1",
+        title: "Présentiel",
+        content: {
+          lieu: "Paris 13",
+          duree: "2 jours (14 heures)",
+          prix: "700,00",
+          financements: ["Pole emploi", "Agefiph", "OPCO"]
+        }
+      },
+      {
+        id: "2",
+        title: "Distanciel",
+        content: {
+          lieu: "Viseoconférence",
+          duree: "2 jours (14 heures)",
+          prix: "700,00",
+          financements: ["Pole emploi", "Agefiph", "OPCO"]
+        }
+      },
+      /* {
+        id: "3",
+        title: "E-learning",
+        content: {
+          duree: "2 jours",
+          prix: "700,00€",
+          financements: ["Pole emploi", "Agefiph", "OPCO"]
+        }
+      } */
+  ]
+},
 ]
 
 
