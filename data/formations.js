@@ -2037,7 +2037,7 @@ export const formations = [
   statut: "publié",
   categorie: "reseaux-sociaux",
   categorieSlug: "reseaux-sociaux",
-  categorieId: "4",
+  categorieId: "5",
   types: ["Présentiel", "Distanciel"],
   admission: "Tout public",
   evaluation: "Test QCM",
