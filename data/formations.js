@@ -2184,8 +2184,8 @@ export const formations = [
         title: "Présentiel",
         content: {
           lieu: "Paris 13",
-          duree: "2 jours (14 heures)",
-          prix: "700,00",
+          duree: "1 jour (7 heures)",
+          prix: "1200,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
@@ -2194,8 +2194,8 @@ export const formations = [
         title: "Distanciel",
         content: {
           lieu: "Viseoconférence",
-          duree: "2 jours (14 heures)",
-          prix: "700,00",
+          duree: "1 jours(7 heures)",
+          prix: "1200,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
