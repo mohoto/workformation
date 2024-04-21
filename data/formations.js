@@ -2046,7 +2046,7 @@ export const formations = [
       } */
   ]
 },
-    {
+{
   id: "12",
   title: "Formation LinkedIn",
   slug: "formation-linkedin",
