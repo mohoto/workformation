@@ -131,7 +131,7 @@ export const formations = [
             },
             {
               id: "4",
-              title: "Moyens pédagogiques",
+              title: "Méthodes et moyens pédagogiques",
               accordionContent: [
                 {
                   id:"1",
