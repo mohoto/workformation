@@ -2059,7 +2059,7 @@ export const formations = [
   evaluation: "Test QCM",
   certification: "Attestation de réussite",
   resume: "Développez votre présence sur LinkedIn et atteignez vos objectif avec un profil attractif, un réseau professionnel de qualité et du contenu pertinent.",
-  image: "/images/formations/bureautique/formation-excel-debutant.jpg",
+  image: "/images/formations/bureautique/formation-linkedin.png",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "La formation Microsoft Excel 2021 pour les débutants est une occasion idéale pour les personnes qui souhaitent maîtriser les bases du logiciel de feuilles de calcul. Ce programme est conçu pour être accessible à tous, sans prérequis technique particulier."},
     {id: "2", fontWeight: "font-normal", content: "Notre programme de formation couvre toutes les compétences nécessaires pour travailler efficacement avec Excel. Au cours de cette formation, les participants apprendront à utiliser des techniques avancées pour gérer et analyser les données, telles que les filtres et les requêtes. Ils découvriront également comment créer des tableaux croisés dynamiques et des pivot tables pour visualiser les données de manière cohérente, ainsi que des astuces pour automatiser les tâches en utilisant des macros."},
@@ -2185,7 +2185,7 @@ export const formations = [
         content: {
           lieu: "Paris 13",
           duree: "1 jour (7 heures)",
-          prix: "1200,00",
+          prix: "1100,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
@@ -2195,7 +2195,7 @@ export const formations = [
         content: {
           lieu: "Viseoconférence",
           duree: "1 jours(7 heures)",
-          prix: "1200,00",
+          prix: "1100,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
