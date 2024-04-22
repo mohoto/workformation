@@ -2185,7 +2185,7 @@ export const formations = [
         content: {
           lieu: "Paris 13",
           duree: "1 jour (7 heures)",
-          prix: "1100,00",
+          prix: "1200,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
@@ -2195,7 +2195,7 @@ export const formations = [
         content: {
           lieu: "Viseoconférence",
           duree: "1 jours(7 heures)",
-          prix: "1100,00",
+          prix: "1200,00",
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       },
