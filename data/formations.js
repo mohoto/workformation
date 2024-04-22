@@ -2148,18 +2148,21 @@ export const formations = [
       },
       {
         id: "4",
-        title: "Moyens pédagogiques",
+        title: "Méthodes et moyens pédagogiques",
         accordionContent: [
-          {
+        {
             id:"1",
             title: "",
             lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
-            ]
-          }
-        ]
-      },
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
       {
         id: "5",
         title: "Évaluation des résultats",
