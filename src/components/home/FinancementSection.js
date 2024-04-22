@@ -33,8 +33,8 @@ export default function FinancementSection() {
                             <h4 className="mb-4 text-lg font-semibold">Notre centre vous accompagne pour faciliter vos démarches et obtenir les financements auxquelles vous pouvez prétendre.</h4>
                             <p className="mb-2 font-light text-white">Le coût d’une formation peut être un frein pour l’évolution de vos compétences ou pour franchir le pas d’une reconversion professionnelle.</p>
                             <p className="mb-2 font-light text-white">Plusieurs dispositifs existent pour vous soutenir financièrement et différentes aides peuvent être mobilisées pour financer votre parcours de formation.</p>
-                            <p className="font-semibold text-white">Vous avez un projet de formation ? N’hésitez pas à nous en parler. Nous trouverons ensemble le financement le plus adapté</p>
-                            <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white mt-2">Vooir la certification Qualiopi N° : 2200772.1</Link>
+                            <p className="font-semibold text-white mb-2">Vous avez un projet de formation ? N’hésitez pas à nous en parler. Nous trouverons ensemble le financement le plus adapté</p>
+                            <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white mt-2">Voir la certification Qualiopi N° : 2200772.1</Link>
                         </div>
                     </div>
                     <div className="absolute top-0 -translate-x-1/2 md:-translate-y-1/2 md:left-0 md:transform md:top-1/2 left-1/2">
