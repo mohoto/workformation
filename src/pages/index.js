@@ -43,7 +43,7 @@ export async function getStaticProps() {
   const {data: articles} = await axios.get(`${url}/api/articles`);
   return {
     props: {
-      selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "12" || formation.id === "11"),
+      selectedFormations: formations.filter(formation => formation.id === "1" || formation.id === "11" || formation.id === "12"),
       selectedArticles: articles.filter(article => article.id === "1" || article.id === "6" || article.id === "2"),
     }
   }
