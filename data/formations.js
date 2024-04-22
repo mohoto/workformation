@@ -2072,11 +2072,12 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "objectif",
+            title: "Objectif",
             lists: [
-              {id: "1", content:"Comprendre les bases de Microsoft Excel 2021"},
-              {id: "2", content:"Apprendre à utiliser les fonctions de base d'Excel pour travailler avec des feuilles de calcul"},
-              {id: "3", content:"Savoir créer et modifier des tableaux, des graphiques et des formules"}
+              {id: "1", content:"Connaitre l'interface LinkedIn"},
+              {id: "2", content:"Comprendre le social selling"},
+              {id: "3", content:"Développer sa visiblité sur LinkedIn"},
+              {id: "3", content:"Génerer de nouveaux contacts"}
             ]
           }
         ]
@@ -2087,50 +2088,54 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "INTRODUCTION À MICROSOFT EXCEL 2021",
+            title: "PRESENATATION DE LINKEDIN",
             lists: [
-              {id: "1", content:"Présentation du logiciel et de son interface utilisateur"},
-              {id: "2", content:"Naviguer dans les feuilles de calcul"},
-              {id: "3", content:"Créer et enregistrer un nouveau classeur"}
-            
+              {id: "1", content:"Importance au sein d'une stratégie globale"},
+              {id: "2", content:"Avantages"},
             ]
           },
           {
             id:"2",
-            title: "SAISIE ET FORMATAGE DE DONNÉES",
+            title: "COMPRENDRE LE SOCIAL SELLING",
             lists: [
-              {id: "1", content:"Saisir et modifier des données dans les cellules"},
-              {id: "2", content:"Utiliser les outils de formatage pour améliorer l'apparence des données"},
-              {id: "3", content:"Appliquer des styles et des thèmes pour une présentation cohérente"}
+              {id: "1", content:"Objectif du social selling"},
+              {id: "2", content:"Introduction à l'imbound marketing"},
             ]
           },
           {
             id:"3",
-            title: "UTILISATION DES FORMULES ET DES FONCTIONS",
+            title: "CRÉER ET OPTIMISER SON COMPTE",
             lists: [
-              {id: "1", content:"Comprendre comment utiliser les formules et les fonctions pour effectuer des calculs automatisés"},
-              {id: "2", content:"Apprendre les fonctions de base telles que SOMME, MOYENNE, MAX et MIN"},
-              {id: "3", content:"Créer et utiliser des formules complexes"}
+              {id: "1", content:"Créer et paramétrer une page"},
+              {id: "2", content:"Fonctionnement d'une page entreprise"},
             ]
           },
           {
             id:"4",
-            title: "CRÉATION DE TABLEAUX ET DE GRAPHIQUES",
+            title: "DÉVELOPPER SON RÉSEAU",
             lists: [
-              {id: "1", content:"Créer et personnaliser des tableaux pour organiser les données"},
-              {id: "2", content:"Insérer des graphiques pour représenter les données de manière visuelle"},
-              {id: "3", content:"Modifier et formater les graphiques pour une présentation claire"}
+              {id: "1", content:"Utiliser les moteurs de recherche et les opérations booléens"},
+              {id: "2", content:"Envoyer une demande personnalisée"},
             ]
           },
           {
             id:"5",
-            title: "Astuces et fonctionnalités avancées",
+            title: "CRÉER DU CONTENU",
             lists: [
-              {id: "1", content:"Découvrir des astuces pour maximiser l'efficacité de Microsoft Excel 2021"},
-              {id: "2", content:"Utiliser des fonctionnalités avancées telles que les tableaux croisés dynamiques et les pivot tables"},
-              {id: "3", content:"Réviser les compétences acquises au cours de la formation."}
+              {id: "1", content:"Créer une ligne éditoriale"},
+              {id: "2", content:"Créer du contenu"},
+              {id: "3", content:"Comprendre l'algorithme"}
             ]
-          },          
+          },    
+          {
+            id:"6",
+            title: "INTERAGIR AVEC LE RÉSEAU",
+            lists: [
+              {id: "1", content:"Commenter des posts"},
+              {id: "2", content:"Réaliser une veille efficace"},
+              {id: "3", content:"Envoyer des messages privés d'interaction"}
+            ]
+          },    
         ]  
       },
       {
