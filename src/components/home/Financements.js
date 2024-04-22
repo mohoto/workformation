@@ -124,6 +124,7 @@ export default function Financements() {
                             <h4 className="mb-4 text-lg font-semibold">Notre centre vous accompagne pour faciliter vos démarches et obtenir les subventions auxquelles vous pouvez prétendre.</h4>
                             <p className="mb-2 text-white">Le coût d’une formation peut être un frein pour l’évolution de vos compétences ou pour franchir le pas d’une reconversion professionnelle.</p>
                             <p className="text-white">Plusieurs dispositifs existent pour vous soutenir financièrement et différentes aides peuvent être mobilisées pour financer votre parcours de formation.</p>
+                            <p className="text-white">Test</p>
                             <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white">Certification Qualiopi N° : 2200772.1</Link>
                         </div>
                     </div>
