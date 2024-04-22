@@ -26,7 +26,7 @@ export default function FinancementSection() {
                         />
                     </div>
                 </div>
-                <div className="2xl:py-10 relative rounded-lg bg-second-50 before:w-0 before:h-0 before:border-t-[0] before:border-t-transparent before:border-l-[40px] before:border-l-transparent before:border-b-[40px] before:border-b-second-50 before:border-r-[40px] before:border-r-transparent before:mt-[-40px] before:right-[50%] before:absolute
+                <div className="2xl:py-8 relative rounded-lg bg-second-50 before:w-0 before:h-0 before:border-t-[0] before:border-t-transparent before:border-l-[40px] before:border-l-transparent before:border-b-[40px] before:border-b-second-50 before:border-r-[40px] before:border-r-transparent before:mt-[-40px] before:right-[50%] before:absolute
                 lg:before:border-t-[40px] lg:before:border-t-transparent lg:before:border-l-[0] lg:before:border-b-transparent lg:before:border-r-second-50 lg:before:-t-[0] lg:before:ml-[-40px] lg:before:bottom-[50%] lg:before:left-[0]">
                     <div className="flex flex-col justify-center h-full p-6 md:px-8">
                         <div className="text-white">
@@ -34,7 +34,7 @@ export default function FinancementSection() {
                             <p className="mb-2 font-light text-white">Le coût d’une formation peut être un frein pour l’évolution de vos compétences ou pour franchir le pas d’une reconversion professionnelle.</p>
                             <p className="mb-2 font-light text-white">Plusieurs dispositifs existent pour vous soutenir financièrement et différentes aides peuvent être mobilisées pour financer votre parcours de formation.</p>
                             <p className="font-semibold text-white">Vous avez un projet de formation ? N’hésitez pas à nous en parler. Nous trouverons ensemble le financement le plus adapté</p>
-                            <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white">Certification Qualiopi N° : 2200772.1</Link>
+                            <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white mt-2">Vooir la certification Qualiopi N° : 2200772.1</Link>
                         </div>
                     </div>
                     <div className="absolute top-0 -translate-x-1/2 md:-translate-y-1/2 md:left-0 md:transform md:top-1/2 left-1/2">
