@@ -434,7 +434,7 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "objectif",
+            title: "",
             lists: [
               {id: "1", content:"Améliorer les compétences en matière de mise en forme avancée de documents, notamment la gestion de sections complexes, la création de tableaux de données dynamiques et l'utilisation d'objets Word avancés."},
               {id: "2", content:"Apprendre à utiliser des styles et des modèles pour améliorer la présentation des documents de manière professionnelle et économiser du temps."},
@@ -629,7 +629,7 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "objectif",
+            title: "",
             lists: [
               {id: "1", content:"Comprendre les bases de Microsoft Excel 2021"},
               {id: "2", content:"Apprendre à utiliser les fonctions de base d'Excel pour travailler avec des feuilles de calcul"},
@@ -2072,7 +2072,7 @@ export const formations = [
         accordionContent: [
           {
             id:"1",
-            title: "Objectif",
+            title: "",
             lists: [
               {id: "1", content:"Connaitre l'interface LinkedIn"},
               {id: "2", content:"Comprendre le social selling"},
