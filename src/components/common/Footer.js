@@ -20,7 +20,11 @@ export default function Footer() {
                     </div>
                     <p className="mt-4 mb-2 text-sm font-extralight">Notre centre a obtenu la certification QUALIOPI. Cette certification qualité a été délivrée au titre de la catégorie: actions de formation.</p>
                     <p className="text-sm font-extralight mb-2">N° de déclaration d'activité : 11756436975 </p>
-                    <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white mt-2">Voir la certification Qualiopi N° : 2200772.1</Link>
+                    <Link href="qualiopi_certificat_de_conformité.pdf" className="text-white mt-2" passHref legacyBehavior>
+                        <a target="_blank">
+                            Voir la certification Qualiopi N° : 2200772.1
+                        </a>
+                    </Link>
                 </div>
                 <div>
                     <h5 className="text-xl font-bold md:text-lg">LIENS RAPIDES</h5>
