@@ -171,7 +171,7 @@ export const formations = [
                   id:"1",
                   title: "",
                   lists: [
-                    {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, XXXXXXXX par mail : XXXXXXXXXXX@XXXXXXXX ou par téléphone : 06 XX XX XX XX pour connaître les modalités d’adaptation de la formation."},
+                    {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
                   ]
                 },
               ]
@@ -345,32 +345,49 @@ export const formations = [
         },
         {
           id: "4",
-          title: "Moyens pédagogiques",
+          title: "Méthodes et moyens pédagogiques",
           accordionContent: [
             {
               id:"1",
               title: "",
               lists: [
-                {id: "1", content:"Support pédagogique remis à l’apprenant."},
-                {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
               ]
             }
           ]
         },
         {
           id: "5",
-          title: "Évaluation des résultats",
+          title: "Moyens d'évaluation",
           accordionContent: [
             {
               id:"1",
               title: "",
               lists: [
-                {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-                {id: "2", content:"Évaluation continue durant la session (QCM)."},
-                {id: "3", content:"Remise d’une attestation de fin de formation."},
-                {id: "4", content:"Remise d’une attestation de réussite."},
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
               ]
-            }
+            },
+            ]
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
           ]
           
         }
@@ -539,36 +556,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -704,36 +738,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -868,36 +919,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1030,36 +1098,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1211,36 +1296,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1401,36 +1503,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1564,36 +1683,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1775,36 +1911,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -1983,36 +2136,53 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Moyens pédagogiques",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Support pédagogique remis à l’apprenant."},
-              {id: "2", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
+                {id: "2", content:"Observation et démonstration"},
+                {id: "3", content:"Activités d’application individuelles"},
+                {id: "4", content:"Support pédagogique remis à l’apprenant."},
+                {id: "5", content:"Salle de formation équipée de tables et chaises, ordinateur équipé du pack office, vidéoprojecteur, paper-board."},
+              ]
+            }
+          ]
+        },
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-      },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
-            ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
@@ -2152,13 +2322,13 @@ export const formations = [
         ]
       },
       {
-        id: "4",
-        title: "Méthodes et moyens pédagogiques",
-        accordionContent: [
-        {
-            id:"1",
-            title: "",
-            lists: [
+          id: "4",
+          title: "Méthodes et moyens pédagogiques",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
                 {id: "1", content:"Mise en situation pratique systématique sur l’outil informatique."},
                 {id: "2", content:"Observation et démonstration"},
                 {id: "3", content:"Activités d’application individuelles"},
@@ -2168,23 +2338,37 @@ export const formations = [
             }
           ]
         },
-      {
-        id: "5",
-        title: "Évaluation des résultats",
-        accordionContent: [
-          {
-            id:"1",
-            title: "",
-            lists: [
-              {id: "1", content:"Questionnaire d’évaluation en début et en fin de formation (QCM)."},
-              {id: "2", content:"Évaluation continue durant la session (QCM)."},
-              {id: "3", content:"Remise d’une attestation de fin de formation."},
-              {id: "4", content:"Remise d’une attestation de réussite."},
+        {
+          id: "5",
+          title: "Moyens d'évaluation",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"Afin de permettre d’évaluer les acquis de chaque stagiaire, des QCM permettront de vérifier si les principes essentiels découlant de la formation ont bien été acquis."},
+                {id: "2", content:"Une feuille de présence est rédigée et une attestation visée par l’organisme de formation sera remise à chaque stagiaire."},
+                {id: "3", content:"Une évaluation de la satisfaction du stagiaire à travers un questionnaire (qualité organisationnelle et pédagogique de la formation) sera effectuée en fin de formation"},
+                {id: "4", content:"Remise d’une attestation de fin de formation."},
+                {id: "5", content:"Remise d’une attestation de réussite."},
+              ]
+            },
             ]
-          }
-        ]
-        
-      }
+        },
+        {
+          id: "6",
+          title: "Accessibilité pour les personnes en situation de handicap",
+          accordionContent: [
+            {
+              id:"1",
+              title: "",
+              lists: [
+                {id: "1", content:"KAROY se tient à la disposition des personnes en situation de handicap pour faciliter leurs participations à la formation. Avec un référent Handicap à disposition, nous vous assurons un suivi adapté et un lien constant entre le réseau de partenaire et l’équipe pédagogique. Contactez notre référent handicap, madame Rnée Diane KRA par mail : renee.kra@gmail.com ou par téléphone : 06 X56 76 98 02 pour connaître les modalités d’adaptation de la formation."},
+              ]
+            },
+          ]
+          
+        }
   ],
   infosTypes: [
       {
