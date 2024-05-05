@@ -102,7 +102,7 @@ export default function Formation({formation}) {
                       <div>
                         <div dangerouslySetInnerHTML={{ __html: formation?.download }}></div>
                       </div>
-                    )
+                    )}
                 </div>
               </div>
               <div className="mt-6">
