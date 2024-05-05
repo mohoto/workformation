@@ -13,12 +13,18 @@ export default function Centres() {
                     <p>Notre centre dispose d’espaces dédiés et de matériel pédagogique pour l’apprentissage théorique et pratique.</p>
                     <p>Situé à Paris, il est facilement accessible par les transports en commun ou en voiture.</p>
                 </div>
-                <div className="flex flex-col items-center justify-center p-6 py-5 text-center text-white bg-second-50 rounded-xl">
+                 {/*<div className="flex flex-col items-center justify-center p-6 py-5 text-center text-white bg-second-50 rounded-xl">
                     <span>N'hésitez-pas</span>
                     <h3 className="text-xl"> Contactez-nous!</h3>
                     <a href="tel:+33-1-45-76-78-98" className="flex items-center justify-center mt-4 text-2xl">
                         <BsTelephoneInbound size={20} className="inline-block mr-2" />01 84 80 53 44
                     </a>
+                </div>*/}
+                <div className="flex flex-col items-center justify-center p-6 py-5 text-center text-white bg-second-50 rounded-xl">
+                    <span>N'hésitez-pas</span>
+                    <h3 className="text-xl"> 95% de satisfaction*</h3>
+                    <p>9 stagiaires ont été formés par notre organisme de formation en 2024</p>
+                    <p>* Taux calculé à partir des questionnaires de satisfaction recueillis depuis janvier 2024</p>
                 </div>
                 {/* <div className="flex justify-center">
                     <div className="relative border-4 rounded-full w-52 h-52 border-bleue-karoy-50">
