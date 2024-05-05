@@ -98,6 +98,11 @@ export default function Formation({formation}) {
                   <div className="flex flex-col p-4 mt-4 space-y-6">
                     <Tab tabData= {formation?.infosTypes} />
                     <p className="font-light">Pour les formations en itra-entreprise ou pour toute demande spécifique, contactez notre centre de formation.</p>
+                    { formation.download && (
+                      <div>
+                        <div dangerouslySetInnerHTML={{ __html: formation?.download }}></div>
+                      </div>
+                    )
                 </div>
               </div>
               <div className="mt-6">
