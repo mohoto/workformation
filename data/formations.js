@@ -2230,6 +2230,7 @@ export const formations = [
   certification: "Attestation de réussite",
   resume: "Développez votre présence sur LinkedIn et atteignez vos objectif avec un profil attractif, un réseau professionnel de qualité et du contenu pertinent.",
   image: "/images/formations/bureautique/formation-linkedin.png",
+  download : "<a href='/images/formations/bureautique/formation-linkedin.png'>",
   descriptions: [
     {id: "1", fontWeight: "font-semibold", content: "Plongez dans l'univers dynamique de LinkedIn avec notre formation dédiée, conçue pour vous aider à maîtriser chaque aspect de ce réseau social professionnel incontournable."},
     {id: "2", fontWeight: "font-normal", content: "Que vous souhaitiez développer votre réseau, accroître votre visibilité ou générer de nouveaux clients, notre programme vous offre les connaissances et les compétences nécessaires pour exceller dans votre stratégie LinkedIn."},
@@ -2400,7 +2401,10 @@ export const formations = [
           financements: ["Pole emploi", "Agefiph", "OPCO"]
         }
       } */
-  ]
+  ],
+    {
+        
+    }
 },
 ]
 
