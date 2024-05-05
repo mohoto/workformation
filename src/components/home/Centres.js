@@ -21,8 +21,7 @@ export default function Centres() {
                     </a>
                 </div>*/}
                 <div className="flex flex-col items-center justify-center p-6 py-5 text-center text-white bg-second-50 rounded-xl">
-                    <span>N'hésitez-pas</span>
-                    <h3 className="text-xl"> 95% de satisfaction*</h3>
+                    <h3 className="text-3xl"> 95% de satisfaction*</h3>
                     <p>9 stagiaires ont été formés par notre organisme de formation en 2024</p>
                     <p>* Taux calculé à partir des questionnaires de satisfaction recueillis depuis janvier 2024</p>
                 </div>
