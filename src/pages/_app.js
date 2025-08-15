@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
               <span className="relative inline-flex w-10 h-10 bg-white rounded-full"></span>
           </div>
       ): (
-        <main className={`${poppins.variable} font-sans`}>
+        <main className={`${poppins.variable} font-sans bg-white`}>
               <Layout>
                 <Component {...pageProps} />
               </Layout>
