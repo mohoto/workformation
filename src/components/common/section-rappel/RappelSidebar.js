@@ -78,7 +78,7 @@ export default function RappelSidebar() {
             <div ref={successMessage} className="flex flex-col items-center px-2 pt-6 pb-3 md:px-4">
                 <div className="relative rounded-full shadow-2xl w-28 h-28">
                     <Image 
-                    src="/images/conseiller-karoy-formation"
+                    src="/images/conseiller-karoy-formation.png"
                     fill
                     className="rounded-full"
                     alt="illustration conseiller Work formation"
