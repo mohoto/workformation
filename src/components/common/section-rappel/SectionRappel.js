@@ -80,6 +80,13 @@ export default function SectionRappel() {
         <section className="flex flex-col items-center px-4 py-16 md:px-20 bg-bleue-karoy-100" id="sectionRappel">
             <div ref={successMessage} className="relative before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:rounded-full before:bottom-[10px] before:left-[50%] before:bg-second-50">
                 <div className="relative rounded-full shadow-2xl w-36 h-36">
+                    <Image 
+                    src="/images/conseiller-karoy-formation.png"
+                    fill
+                    sizes="100vw"
+                    className="rounded-full absolute"
+                    alt="illustration conseiller Work formation"
+                    />
                     {/* <div className="absolute w-[40px] h-[40px] bg-second-50 rounded-full bottom-[10px] right-[-10px]">
                     </div> */}
                     <BsInfoCircleFill size={45} className="absolute text-second-50 bottom-[10px] right-[-10px] bg-white rounded-full border-2 border-white" />
