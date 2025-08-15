@@ -81,7 +81,7 @@ export default function SectionRappel() {
             <div ref={successMessage} className="relative before:content-[''] before:absolute before:w-[50px] before:h-[50px] before:rounded-full before:bottom-[10px] before:left-[50%] before:bg-second-50">
                 <div className="relative rounded-full shadow-2xl w-36 h-36">
                     <Image 
-                    src="/images/conseiller-karoy-formation"
+                    src="/images/conseiller-karoy-formation.png"
                     fill
                     sizes="100vw"
                     className="rounded-full"
