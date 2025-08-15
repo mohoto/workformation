@@ -80,7 +80,7 @@ export default function RappelSidebar() {
                     <Image 
                     src="/images/conseiller-karoy-formation.png"
                     fill
-                    className="rounded-full"
+                    className="rounded-full absolute"
                     alt="illustration conseiller Work formation"
                     />
                     <BsInfoCircleFill size={35} className="absolute text-second-50 bottom-[10px] right-[-10px] bg-white rounded-full border-2 border-white" />
